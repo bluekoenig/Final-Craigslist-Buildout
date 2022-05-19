@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34365",
   "files" : {
+    "\/deploy\/calendar.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -139,6 +147,30 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/calendar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/c-page-calendar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/details.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
     "\/dev\/content\/featured.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -179,12 +211,36 @@
       "oAP" : "\/dev\/content\/nearby.html",
       "oF" : 0
     },
+    "\/dev\/content\/page-top.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
     "\/dev\/content\/reimagined.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/deploy\/index.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/suggested.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/whats-happening.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
       "oF" : 2
     },
     "\/dev\/global\/footer.kit" : {
@@ -195,6 +251,14 @@
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
+    "\/dev\/global\/footer2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -203,6 +267,14 @@
       "oAP" : "\/dev\/global\/head.html",
       "oF" : 0
     },
+    "\/dev\/global\/head2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
+    },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -210,6 +282,14 @@
       "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
       "oF" : 0
+    },
+    "\/dev\/global\/header2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/deploy\/calendar.html",
+      "oF" : 2
     },
     "\/dev\/global\/nav.kit" : {
       "cB" : 0,
