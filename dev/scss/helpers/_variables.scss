@@ -16,6 +16,26 @@ $screen-lg-min: 1024px;
 $screen-xl-min: 1200px;
 
 
+// xx Large desktops
+$screen-xxl-min: 1440px;
+
+
 // Colors
-$white: #fff;
-$black: #000;
+// $white: #fff;
+// $black: #000;
+
+:root{
+    --dark-gray: #333333;
+    --eggplant: #2E2885;
+    --tulip: #5012B5;
+    --lavendar: #DCD6F7;
+    --black: black;
+    --white: white;
+    --deep-iris: #560A93;
+    --punchy: #7708CF;
+    --wow-pink: #F61067;
+    --deep-space: #350659;
+    --blueberry: #A6B1E1;
+    --poke: #7B62CB;
+   
+}
