@@ -367,9 +367,137 @@ template {
 /* =============
     Base
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.css-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". big-grid .";
+}
+@media (min-width: 1440px) {
+  .css-grid {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+
+#headline {
+  font-family: "Open Sans" sans-serif;
+  font-size: 3rem;
+}
+#headline a:link,
+#headline a:visited {
+  text-decoration: none;
+  transition: 0.5s;
+  color: var(--white);
+  padding: 10px;
+  display: inline-block;
+}
+#headline a:link:hover, #headline a:link:active,
+#headline a:visited:hover,
+#headline a:visited:active {
+  color: var(--white);
+}
+
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    display: block;
+    grid-template-columns: 75% auto;
+    font-family: "open sans", sans-serif;
+    font-size: rem-clac(24);
+    color: var(--dark-teal);
+  }
+}
+
+h6 {
+  font-size: rem-clac(16);
+  padding: 0px;
+  margin: 16px 0px 16px 0px;
+  color: var(--dark-tan);
+}
+
+h3 {
+  margin-bottom: 12px;
+}
+
+h4 {
+  margin-bottom: 12px;
+}
+
+p {
+  padding: 6px 0px 6px 0px;
+}
+@media (min-width: 768px) {
+  p {
+    padding: 16px 0px 16px 0px;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.bold-font {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .bold-font {
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+@media (min-width: 1024px) {
+  .bold-font {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
+
+.semi-bold {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 8px 8px 8px 8px;
+}
+@media (min-width: 768px) {
+  .semi-bold {
+    font-size: 2.25rem;
+    font-weight: 300;
+  }
+}
+
 /* =============
     Buttons
 ============= */
@@ -397,6 +525,42 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 24px;
+  background-color: var(--dark-gray);
+}
+@media (min-width: 768px) {
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: auto;
+    left: 0;
+  }
+}
+@media (min-width: 768px) {
+  header div {
+    display: grid;
+    grid-template-rows: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  header section h1 {
+    display: block;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  header section h1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* =============
     Footer
 ============= */
