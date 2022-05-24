@@ -501,7 +501,7 @@ address {
 /* =============
     Buttons
 ============= */
-button {
+.button li button {
   margin: auto 24px auto 24px;
   padding: 24px 24px 24px 24px;
   background-color: var(--tulip);
