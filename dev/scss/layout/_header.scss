@@ -8,15 +8,16 @@ header {
     bottom: 0;
     left: 0;
 
-    @include md {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        bottom: auto;
-        left: 0;
-    }
+    // @include md {
+    //     position: fixed;
+    //     width: 100%;
+    //     top: 0;
+    //     bottom: auto;
+    //     left: 0;
+    // }
 
-    padding-bottom: 24px;
+    padding-bottom: 8px;
+    padding-top: 8px;
     background-color: var(--dark-gray);
 
 
@@ -45,6 +46,49 @@ header {
                     }
                 }
             }
+        
+        
+        
         }
 
 
+        .header-grid{
+            width: 100%;
+
+           display: grid;
+           align-content: center;
+            gap: 16px;
+                grid-area: ac;
+                grid-template-columns: repeat(3, 2fr);
+                grid-template-areas:
+                    "header search nav";
+                
+        }
+
+        // .headline-grid{
+        //   grid-area: headline-grid
+        // }
+
+        // .search-grid{
+        // grid-area: search-grid;
+        // }
+
+        // .nav-grid{
+        //     grid-area: nav-grid;
+        //     }
+
+        .logo{
+display: block;
+
+@include md{
+    display: none;
+}
+        }
+
+        .words{
+            display: none;
+            
+            @include md{
+                display: block;
+            }
+        }
