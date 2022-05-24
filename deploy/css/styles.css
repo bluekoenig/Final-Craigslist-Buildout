@@ -511,6 +511,16 @@ address {
   font-size: 1.5rem;
 }
 
+.post-button {
+  margin: auto 24px auto 24px;
+  padding: 24px 25% 24px 25%;
+  background-color: var(--tulip);
+  border: none;
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 1.5rem;
+}
+
 /* =============
     Forms
 ============= */

@@ -1,17 +1,18 @@
 #hero{
-    div{
-        // width: 100vw;
-        // height: 50vh;
-        // background-image: url('../images/gibson-hurst-fCk9KS__uGw-unsplash.png');
-        // background-size: cover;
-        // background-position: center center;
+
+            //     width: 100%;
+            }
+        
+         
     
-        // @include lg {
-        //     height: 70vh;
-        //     background-position: center left;
-        // }
+
+.button-grid{
+    display: grid;
+    grid-template-columns: 30% auto 30%;
+}
+
+.hero-img{
 
         width: 100%;
-    }
     
 }
