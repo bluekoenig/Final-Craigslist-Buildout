@@ -1,20 +1,28 @@
-.search{
-    padding: 40px;
-}
+// .search{
+//     padding: 40px;
+// }
 
-.search-button{
+// .search-button{
 
-    div{
-        background-color: var(white);
-        color: var(--tulip);
-        border: none;
-        border-radius: 0;
-    }
+//     div{
+//         background-color: var(white);
+//         color: var(--tulip);
+//         border: none;
+//         border-radius: 0;
+//     }
    
-}
+// }
 
-.input-format{
-    input{
-        padding: 40px 40px 40px 40px;
+// .input-format{
+//     input{
+//         padding: 40px 40px 40px 40px;
+//     }
+// }
+
+#search{
+    form{
+        input{
+            background-color: red;
+        }
     }
 }
