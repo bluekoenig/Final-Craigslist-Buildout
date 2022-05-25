@@ -6,6 +6,17 @@
 
 .button-grid{
     display: grid;
-    grid-template-columns: 15% auto 15%;
+  grid-template-columns: 15% auto 15%;
+grid-template-areas: ". post-button .";
+}
+
+.callout{
+    h3{
+        display: grid;
+        grid-area: callout;
+  grid-template-areas: ". callout .";
+grid-template-columns: 16px auto 16px;
+    }
+ 
 }
 

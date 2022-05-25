@@ -2,15 +2,19 @@
 //     padding: 40px;
 // }
 
-// .search-button{
+.search-button{
 
-//     div{
-//         background-color: var(white);
-//         color: var(--tulip);
-//         border: none;
-//         border-radius: 0;
-//     }
-   
+    div{
+        button{
+            background-color: var(white);
+            color: var(--tulip);
+            border: none;
+            border-radius: 0;
+            padding: 12px 12px 12px 12px;
+        }
+       
+    }
+}
 // }
 
 // .input-format{
@@ -22,7 +26,7 @@
 #search{
     form{
         input{
-            background-color: red;
+            padding: 16px 30% 16px 8px;
         }
     }
 }

@@ -498,6 +498,10 @@ address {
   }
 }
 
+.welcome {
+  grid-area: callout;
+}
+
 /* =============
     Buttons
 ============= */
@@ -519,6 +523,7 @@ address {
   color: var(--white);
   border-radius: 40px;
   font-size: 1.5rem;
+  grid-area: post-button;
 }
 
 /* =============
@@ -604,8 +609,16 @@ header {
 /* =============
     Footer
 ============= */
+.search-button div button {
+  background-color: var(white);
+  color: var(--tulip);
+  border: none;
+  border-radius: 0;
+  padding: 12px 12px 12px 12px;
+}
+
 #search form input {
-  background-color: red;
+  padding: 16px 30% 16px 8px;
 }
 
 .cal-button ul li button {
@@ -621,4 +634,12 @@ header {
 .button-grid {
   display: grid;
   grid-template-columns: 15% auto 15%;
+  grid-template-areas: ". post-button .";
+}
+
+.callout h3 {
+  display: grid;
+  grid-area: callout;
+  grid-template-areas: ". callout .";
+  grid-template-columns: 16px auto 16px;
 }
