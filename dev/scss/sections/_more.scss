@@ -11,11 +11,11 @@ ul{
     display: grid;
     grid-template-columns: 24px auto auto auto auto auto 24px;
     grid-template-areas: 
-    ". b1 b2 b2 b3"
-    "b4 b4 b5 b6 ."
-    ". b7 b8 b9 b9"
-    "b10 b10 b11 b12 ."
-    ". b13 b14 b14 .";
+    ". . b1 b2 b2 b3 ."
+    ". b4 b4 b5 b6 . ."
+    ". . b7 b8 b9 b9 ."
+    ". b10 b10 b11 b12 . ."
+    ". . b13 b14 b14 . .";
    
 }
        
@@ -53,6 +53,18 @@ ul{
 }
 .b10{
     grid-area: b10;
+}
+.b11{
+    grid-area: b11;
+}
+.b12{
+    grid-area: b12;
+}
+.b13{
+    grid-area: b13;
+}
+.b14{
+    grid-area: b14;
 }
 
 .back-top{
