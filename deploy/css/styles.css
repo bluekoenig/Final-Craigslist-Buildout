@@ -621,10 +621,51 @@ header {
   padding: 16px 30% 16px 8px;
 }
 
+.featured h2 {
+  margin-top: 24px;
+  margin-left: 16px;
+  display: grid;
+}
+.featured ul {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 24px auto auto auto auto auto 24px;
+  grid-template-areas: "b1 b2 b3 b4 b4" ". b5 b6 b7 .";
+  width: 100%;
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+}
+
+.b5 {
+  grid-area: b5;
+}
+
+.b6 {
+  grid-area: b6;
+}
+
+.b7 {
+  grid-area: b7;
+}
+
 .cal-button ul li button {
   background-color: var(--punchy);
-  color: var(white);
-  padding: 0px 24px 0px 24px;
+  color: var(--white);
+  padding: 16px 72px 16px 72px;
 }
 
 #hero img {
@@ -642,4 +683,125 @@ header {
   grid-area: callout;
   grid-template-areas: ". callout .";
   grid-template-columns: 16px auto 16px;
+}
+
+#more h2 {
+  margin-top: 24px;
+  margin-left: 16px;
+  display: grid;
+}
+#more ul {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 24px auto auto auto auto auto 24px;
+  grid-template-areas: ". b1 b2 b2 b3" "b4 b4 b5 b6 ." ". b7 b8 b9 b9" "b10 b10 b11 b12" ". b13 b14 b14 .";
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+}
+
+.b5 {
+  grid-area: b5;
+}
+
+.b6 {
+  grid-area: b6;
+}
+
+.b7 {
+  grid-area: b7;
+}
+
+.b8 {
+  grid-area: b8;
+}
+
+.b9 {
+  grid-area: b9;
+}
+
+.b10 {
+  grid-area: b10;
+}
+
+#nearby h2 {
+  margin-top: 24px;
+  margin-left: 16px;
+  display: grid;
+}
+#nearby ul {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 24px auto auto auto auto auto 24px;
+  grid-template-areas: "b1 b2 b3 b4 b4" ". b5 b6 b7 ." ". b8 b9 b10 .";
+  width: 100%;
+}
+
+.b1 {
+  grid-area: b1;
+}
+
+.b2 {
+  grid-area: b2;
+}
+
+.b3 {
+  grid-area: b3;
+}
+
+.b4 {
+  grid-area: b4;
+}
+
+.b5 {
+  grid-area: b5;
+}
+
+.b6 {
+  grid-area: b6;
+}
+
+.b7 {
+  grid-area: b7;
+}
+
+.b8 {
+  grid-area: b8;
+}
+
+.b9 {
+  grid-area: b9;
+}
+
+.b10 {
+  grid-area: b10;
+}
+
+.reimagined {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: 10% auto auto 10%;
+  grid-template-areas: ". map-image rem-text .";
+}
+
+.rem-text {
+  grid-area: rem-text;
+  margin-left: 16px;
+}
+
+.map-image {
+  grid-area: map-image;
 }

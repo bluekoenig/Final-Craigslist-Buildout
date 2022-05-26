@@ -1,0 +1,43 @@
+.featured{
+    h2{
+        margin-top: 24px;
+        margin-left: 16px;
+        display: grid;
+       
+    }
+ul{
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: 24px auto auto auto auto auto 24px;
+    grid-template-areas: 
+    "b1 b2 b3 b4 b4"
+    ". b5 b6 b7 .";
+    width: 100%;
+}
+       
+    }
+
+
+.b1{
+    grid-area: b1;
+}
+
+.b2{
+    grid-area: b2;
+}
+
+.b3{
+    grid-area: b3;
+}
+.b4{
+    grid-area: b4;
+}
+.b5{
+    grid-area: b5;
+}
+.b6{
+    grid-area: b6;
+}
+.b7{
+    grid-area: b7;
+}
