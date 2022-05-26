@@ -12,6 +12,7 @@ html {
 ============= */
 :root {
   --dark-gray: #333333;
+  --light-gray: #EBEBEB;
   --eggplant: #2E2885;
   --tulip: #5012B5;
   --lavendar: #DCD6F7;
@@ -609,6 +610,49 @@ header {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--dark-gray);
+  color: var(--light-gray);
+  padding: 24px 0px 24px 0px;
+}
+footer ul {
+  display: grid;
+  grid-template-columns: 25% auto auto 25%;
+  grid-template-areas: ". f1 f5 ." ". f2 f6 ." ". f3 f7 ." ". f4 f8 .";
+}
+
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.f4 {
+  grid-area: f4;
+}
+
+.f5 {
+  grid-area: f5;
+}
+
+.f6 {
+  grid-area: f6;
+}
+
+.f7 {
+  grid-area: f7;
+}
+
+.f8 {
+  grid-area: f8;
+}
+
 .search-button div button {
   background-color: var(white);
   color: var(--tulip);
@@ -668,6 +712,178 @@ header {
   padding: 16px 72px 16px 72px;
 }
 
+.mega-calendar ul {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  display: grid;
+  grid-template-columns: 16px 14% 14% 14% 14% 14% 14% 14% 16px;
+  grid-template-areas: "l-but .  month month month . r-but" "sun mon tue wed thur fri sat" "c1 c2 c3 c4 c5 c6 c7" "c8 c9 c10 c11 c12 c13 c14" "c15 c16 c17 c18 c19 c20 c21" "c22 c23 c24 c25 c26 c27 c28" "c29 c30 c31 . . . .";
+}
+
+.l-but {
+  grid-area: l-but;
+}
+
+.r-but {
+  grid-area: r-but;
+}
+
+.month {
+  grid-area: month;
+}
+
+.sun {
+  grid-area: sun;
+}
+
+.mon {
+  grid-area: mon;
+}
+
+.tue {
+  grid-area: tue;
+}
+
+.wed {
+  grid-area: wed;
+}
+
+.thur {
+  grid-area: thur;
+}
+
+.fri {
+  grid-area: fri;
+}
+
+.sat {
+  grid-area: sat;
+}
+
+.c1 {
+  grid-area: c1;
+}
+
+.c2 {
+  grid-area: c2;
+}
+
+.c3 {
+  grid-area: c3;
+}
+
+.c4 {
+  grid-area: c4;
+}
+
+.c5 {
+  grid-area: c5;
+}
+
+.c6 {
+  grid-area: c6;
+}
+
+.c7 {
+  grid-area: c7;
+}
+
+.c8 {
+  grid-area: c8;
+}
+
+.c9 {
+  grid-area: c9;
+}
+
+.c10 {
+  grid-area: c10;
+}
+
+.c11 {
+  grid-area: c11;
+}
+
+.c12 {
+  grid-area: c12;
+}
+
+.c13 {
+  grid-area: c13;
+}
+
+.c14 {
+  grid-area: c14;
+}
+
+.c15 {
+  grid-area: c15;
+}
+
+.c16 {
+  grid-area: c16;
+}
+
+.c17 {
+  grid-area: c17;
+}
+
+.c18 {
+  grid-area: c18;
+}
+
+.c19 {
+  grid-area: c19;
+}
+
+.c20 {
+  grid-area: c20;
+}
+
+.c21 {
+  grid-area: c21;
+}
+
+.c22 {
+  grid-area: c22;
+}
+
+.c23 {
+  grid-area: c23;
+}
+
+.c24 {
+  grid-area: c24;
+}
+
+.c25 {
+  grid-area: c25;
+}
+
+.c26 {
+  grid-area: c26;
+}
+
+.c27 {
+  grid-area: c27;
+}
+
+.c28 {
+  grid-area: c28;
+}
+
+.c29 {
+  grid-area: c29;
+}
+
+.c30 {
+  grid-area: c30;
+}
+
+.c31 {
+  grid-area: c31;
+}
+
 #hero img {
   width: 100%;
 }
@@ -678,11 +894,13 @@ header {
   grid-template-areas: ". post-button .";
 }
 
-.callout h3 {
+.callout {
   display: grid;
-  grid-area: callout;
   grid-template-areas: ". callout .";
   grid-template-columns: 16px auto 16px;
+}
+.callout h3 {
+  grid-area: callout;
 }
 
 #more h2 {
@@ -694,7 +912,7 @@ header {
   padding-top: 16px;
   display: grid;
   grid-template-columns: 24px auto auto auto auto auto 24px;
-  grid-template-areas: ". b1 b2 b2 b3" "b4 b4 b5 b6 ." ". b7 b8 b9 b9" "b10 b10 b11 b12" ". b13 b14 b14 .";
+  grid-template-areas: ". b1 b2 b2 b3" "b4 b4 b5 b6 ." ". b7 b8 b9 b9" "b10 b10 b11 b12 ." ". b13 b14 b14 .";
 }
 
 .b1 {
@@ -735,6 +953,32 @@ header {
 
 .b10 {
   grid-area: b10;
+}
+
+.back-top button {
+  display: none;
+}
+@media (min-width: 768px) {
+  .back-top button {
+    margin: 56px;
+    padding: 16px;
+    display: block;
+    border-radius: 40px;
+    border: 5px;
+    border-color: var(--wow-pink);
+  }
+}
+
+.back-top-but aside button {
+  margin: 56px;
+  display: block;
+  background-color: transparent;
+  border: none;
+}
+@media (min-width: 768px) {
+  .back-top-but aside button {
+    display: none;
+  }
 }
 
 #nearby h2 {

@@ -11,11 +11,13 @@ grid-template-areas: ". post-button .";
 }
 
 .callout{
-    h3{
-        display: grid;
-        grid-area: callout;
-  grid-template-areas: ". callout .";
+    display: grid;
+    grid-template-areas: ". callout .";
 grid-template-columns: 16px auto 16px;
+    h3{
+    
+        grid-area: callout;
+  
     }
  
 }
