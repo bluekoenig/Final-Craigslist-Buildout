@@ -1,18 +1,47 @@
 .reimagined{
-margin-top: 72px;
 
-    display: grid;
-    grid-template-columns: 10% auto auto 10%;
-    grid-template-areas:
-    ". map-image rem-text .";
-}
+        margin-top: 72px;
+
+        display: grid;
+        grid-template-columns: 10% auto auto 10%;
+        grid-template-areas:
+        ". rem-title . ."
+        ". map-image . ."
+        ". rem-text . .";
+    
+    
+        @include md{
+            grid-template-columns: 10% auto auto 10%;
+            grid-template-areas:
+            ". map-image rem-title ."
+            ". map-image rem-text .";
+        }
+    }
+
+
+
+
 
 .rem-text{
-    grid-area: rem-text;
-    margin-left: 16px;
+
+        grid-area: rem-text;
+        margin-left: 16px;
+    
+    
 
 
 }
+
+.rem-title{
+ 
+        grid-area: rem-title;
+        margin-left: 16px;
+    }
+
+ 
+
+  
+
 
 .map-image{
     grid-area: map-image;

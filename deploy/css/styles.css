@@ -724,11 +724,12 @@ footer ul {
   padding: 16px 72px 16px 72px;
 }
 
-.mega-calendar {
+.mega-calendar div {
   border: 5px;
   border-color: var(--tulip);
+  box-sizing: border-box;
 }
-.mega-calendar button {
+.mega-calendar div button {
   background-color: var(--white);
   color: var(--dark-gray);
   border: none;
@@ -736,12 +737,12 @@ footer ul {
   cursor: pointer;
   transition: 0.25s;
 }
-.mega-calendar button:hover {
+.mega-calendar div button:hover {
   background-color: var(--tulip);
   color: var(--white);
   border-radius: 50px;
 }
-.mega-calendar ul {
+.mega-calendar div ul {
   margin-top: 36px;
   margin-bottom: 36px;
   display: grid;
@@ -1083,11 +1084,22 @@ footer ul {
   margin-top: 72px;
   display: grid;
   grid-template-columns: 10% auto auto 10%;
-  grid-template-areas: ". map-image rem-text .";
+  grid-template-areas: ". rem-title . ." ". map-image . ." ". rem-text . .";
+}
+@media (min-width: 768px) {
+  .reimagined {
+    grid-template-columns: 10% auto auto 10%;
+    grid-template-areas: ". map-image rem-title ." ". map-image rem-text .";
+  }
 }
 
 .rem-text {
   grid-area: rem-text;
+  margin-left: 16px;
+}
+
+.rem-title {
+  grid-area: rem-title;
   margin-left: 16px;
 }
 
