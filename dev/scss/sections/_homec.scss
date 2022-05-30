@@ -14,6 +14,7 @@ ul{
 
 .mega-calendar{
     div{
+        margin-top: 24px;
         border: 5px;
         border-color: var(--tulip);
         box-sizing: border-box;
@@ -37,7 +38,7 @@ ul{
             margin-top: 36px;
             margin-bottom: 36px;
             display: grid;
-            grid-template-columns: 16px 14% 14% 14% 14% 14% 14% 14% 16px;
+            grid-template-columns: 24px 14% 14% 14% 14% 14% 14% 14% 24px;
             grid-template-areas: 
             ". l-but .  month month month . r-but ."
             ". sun mon tue wed thur fri sat ."
@@ -210,6 +211,18 @@ ul{
 }
 .c31{
     grid-area: c31;
+}
+
+
+.border-grid{
+    div{
+        margin-left: 24px;
+        margin-right: 24px;
+        border: 8px solid var(--tulip);
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+   
 }
     
    
