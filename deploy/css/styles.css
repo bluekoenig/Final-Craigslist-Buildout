@@ -611,6 +611,10 @@ header {
 .search {
   grid-area: search;
 }
+.search form {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .nav {
   grid-area: nav;
@@ -670,7 +674,7 @@ footer ul {
   padding: 12px 12px 12px 12px;
 }
 
-#search form input {
+#search-header form input {
   margin-left: -30%;
   padding: 16px 30% 16px 8px;
 }
@@ -761,6 +765,7 @@ footer ul {
   border-radius: 50px;
 }
 .mega-calendar div ul {
+  text-align: center;
   margin-top: 36px;
   margin-bottom: 36px;
   display: grid;
@@ -943,10 +948,10 @@ footer ul {
 .local-cal {
   margin: 16px 0px 16px 16px;
 }
-.local-cal ul {
+.local-cal ul li {
   display: grid;
   grid-area: local-cal;
-  grid-template-columns: 16px 70% 30% 16px;
+  grid-template-columns: 16px 50% 50% 16px;
   grid-template-areas: ". e1 n1 ." ". e2 n2 ." ". e3 n3 ." ". e4 n4 ." ". e5 n5 ." ". e6 n6 .";
 }
 .local-cal button {
@@ -1012,7 +1017,8 @@ footer ul {
 }
 
 .headline-fixer {
-  margin-left: 16px;
+  margin-top: 24px;
+  text-align: center;
 }
 
 #hero img {
@@ -1027,6 +1033,7 @@ footer ul {
 
 .callout {
   display: grid;
+  text-align: center;
   grid-template-areas: ". callout .";
   grid-template-columns: 16px auto 16px;
 }
@@ -1231,6 +1238,10 @@ footer ul {
   grid-area: p6;
 }
 
+.please-work img {
+  width: 100%;
+}
+
 .reimagined {
   margin-top: 72px;
   display: grid;
@@ -1251,6 +1262,7 @@ footer ul {
 
 .rem-title {
   grid-area: rem-title;
+  text-align: center;
 }
 
 .map-image {

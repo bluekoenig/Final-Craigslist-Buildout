@@ -12,6 +12,7 @@ grid-template-areas: ". post-button .";
 
 .callout{
     display: grid;
+    text-align: center;
     grid-template-areas: ". callout .";
 grid-template-columns: 16px auto 16px;
     h3{

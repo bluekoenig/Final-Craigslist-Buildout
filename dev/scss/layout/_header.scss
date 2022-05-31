@@ -25,82 +25,87 @@ header {
 
 
 
-@include md{
-    display: grid;
-    grid-template-rows: auto;
-    margin-right: auto;
-}
-
-            }
-
-            section {
-                h1 {
-
-                    @include md {
-                        display: block;
-                        font-size: rem-calc(32);
-                    }
-
-                    @include lg {
-                        font-size: rem-calc(40);
-                    }
-                }
-            }
-        
-        
-        
+        @include md {
+            display: grid;
+            grid-template-rows: auto;
+            margin-right: auto;
         }
 
+    }
 
-        .header-grid{
-            width: 100%;
+    section {
+        h1 {
 
-           display: grid;
-           align-content: center;
-            gap: 16px;
-                grid-template-columns: 33% 33% 33%;
-                grid-template-areas:
-                    "header search nav";
-                
-        }
-
-        // .headline-grid{
-        //   grid-area: headline-grid
-        // }
-
-        // .search-grid{
-        // grid-area: search-grid;
-        // }
-
-        // .nav-grid{
-        //     grid-area: nav-grid;
-        //     }
-
-        .logo{
-display: block;
-
-@include md{
-    display: none;
-}
-        }
-
-        .words{
-            display: none;
-            
-            @include md{
+            @include md {
                 display: block;
+                font-size: rem-calc(32);
+            }
+
+            @include lg {
+                font-size: rem-calc(40);
             }
         }
+    }
 
 
-.header{
+
+}
+
+
+.header-grid {
+    width: 100%;
+
+    display: grid;
+    align-content: center;
+    gap: 16px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "header search nav";
+
+}
+
+// .headline-grid{
+//   grid-area: headline-grid
+// }
+
+// .search-grid{
+// grid-area: search-grid;
+// }
+
+// .nav-grid{
+//     grid-area: nav-grid;
+//     }
+
+.logo {
+    display: block;
+
+    @include md {
+        display: none;
+    }
+}
+
+.words {
+    display: none;
+
+    @include md {
+        display: block;
+    }
+}
+
+
+.header {
     grid-area: header;
 }
 
-.search{
+.search {
     grid-area: search;
+    form{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
-.nav{
+.nav {
     grid-area: nav;
 }
+
