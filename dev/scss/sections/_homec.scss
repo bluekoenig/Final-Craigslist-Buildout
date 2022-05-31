@@ -13,6 +13,7 @@ ul{
         }
 
 .mega-calendar{
+    grid-area: mega-calendar;
     div{
         margin-top: 24px;
         border: 5px;
@@ -225,4 +226,53 @@ ul{
    
 }
     
+
+.local-cal{
+    margin: 16px 0px 16px 16px;
+    ul{
+        display: grid;
+        grid-area: local-cal;
+        grid-template-columns: 16px auto 16px;
+    }
+  
+
+    button{
+        border: none;
+        border-radius: 50px;
+        margin-bottom: 16px;
+    }
+}
+
+.e1{
+    grid-area: e1;
+}
+.e2{
+    grid-area: e2;
+}
+.e3{
+    grid-area: e3;
+}
+.e4{
+    grid-area: e4;
+}
+.e5{
+    grid-area: e5;
+}
+.e6{
+    grid-area: e6;
+}
+
+.border-grid2{
+    div{
+        margin: 0px;
+        padding: 24px 16px 24px 16px;
+     background-color: var(--lavendar);
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
    
+}
+
+.headline-fixer{
+    margin-left: 16px;
+}
