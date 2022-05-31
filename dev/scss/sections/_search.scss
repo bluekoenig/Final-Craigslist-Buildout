@@ -3,7 +3,11 @@
 // }
 
 .search-button{
-
+    // grid-area: search-button;
+    // grid-template-columns: 16px 80% 20% 16px;
+    // grid-template-areas: 
+    // ". search search-button .";
+    
     div{
         button{
             background-color: var(white);
@@ -26,6 +30,7 @@
 #search{
     form{
         input{
+            margin-left: -30%;
             padding: 16px 30% 16px 8px;
         }
     }

@@ -58,8 +58,7 @@ header {
            display: grid;
            align-content: center;
             gap: 16px;
-                grid-area: ac;
-                grid-template-columns: repeat(3, 2fr);
+                grid-template-columns: 33% 33% 33%;
                 grid-template-areas:
                     "header search nav";
                 
@@ -92,3 +91,16 @@ display: block;
                 display: block;
             }
         }
+
+
+.header{
+    grid-area: header;
+}
+
+.search{
+    grid-area: search;
+}
+
+.nav{
+    grid-area: nav;
+}

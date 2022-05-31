@@ -1,9 +1,10 @@
 .reimagined{
 
         margin-top: 72px;
-
         display: grid;
-        grid-template-columns: 10% auto auto 10%;
+        
+        grid-template-columns: 16px auto auto 16px;
+        width: 100%;
         grid-template-areas:
         ". rem-title . ."
         ". map-image . ."
@@ -23,11 +24,7 @@
 
 
 .rem-text{
-
-        grid-area: rem-text;
-        margin-left: 16px;
-    
-    
+    grid-area: rem-text; 
 
 
 }
@@ -35,7 +32,7 @@
 .rem-title{
  
         grid-area: rem-title;
-        margin-left: 16px;
+
     }
 
  
@@ -45,5 +42,6 @@
 
 .map-image{
     grid-area: map-image;
+   width: 100%;
    
 }
