@@ -1170,6 +1170,42 @@ footer ul {
   grid-area: b10;
 }
 
+.page-thru ul {
+  display: grid;
+  grid-template-columns: 16px auto auto auto auto auto auto 16px;
+  grid-template-areas: ". p1 p2 p3 p4 p5 p6 .";
+  width: 100%;
+}
+.page-thru button {
+  background-color: transparent;
+  color: var(--eggplant);
+  border: none;
+}
+
+.p1 {
+  grid-area: p1;
+}
+
+.p2 {
+  grid-area: p2;
+}
+
+.p3 {
+  grid-area: p3;
+}
+
+.p4 {
+  grid-area: p4;
+}
+
+.p5 {
+  grid-area: p5;
+}
+
+.p6 {
+  grid-area: p6;
+}
+
 .reimagined {
   margin-top: 72px;
   display: grid;
