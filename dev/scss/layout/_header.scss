@@ -57,11 +57,14 @@ header {
 padding-top: 16px;
     display: grid;
     align-content: center;
-    gap: 16px;
+    gap: 24px;
     grid-template-columns: 8px 25% 40% 20% 8px;
     grid-template-areas:
         ". header search nav .";
 
+        @include md{
+            gap: 36px;
+        }
 }
 
 // .headline-grid{

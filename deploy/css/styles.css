@@ -582,9 +582,14 @@ header {
   padding-top: 16px;
   display: grid;
   align-content: center;
-  gap: 16px;
+  gap: 24px;
   grid-template-columns: 8px 25% 40% 20% 8px;
   grid-template-areas: ". header search nav .";
+}
+@media (min-width: 768px) {
+  .header-grid {
+    gap: 36px;
+  }
 }
 
 .logo {
@@ -777,6 +782,11 @@ footer ul {
   margin-top: 120px;
   grid-area: mega-calendar;
   font-size: 1.125rem;
+}
+@media (min-width: 768px) {
+  .mega-calendar {
+    margin: 0px 56px 0px 56px;
+  }
 }
 .mega-calendar div {
   margin-top: 24px;
@@ -980,10 +990,17 @@ footer ul {
 
 .local-cal {
   margin: 16px 16px 0px 16px;
-  padding: 16px 0px 16px 16px;
+  padding: 24px 0px 16px 16px;
   background-color: var(--lavendar);
   border-radius: 50px;
   box-sizing: border-box;
+  color: var(--deep-iris);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .local-cal {
+    margin: 24px 72px 0px 72px;
+  }
 }
 .local-cal ul {
   width: 100%;
