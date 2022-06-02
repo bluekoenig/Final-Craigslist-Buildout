@@ -14,6 +14,7 @@ ul{
 
 .mega-calendar{
     grid-area: mega-calendar;
+    font-size: rem-calc(18);
     div{
         margin-top: 24px;
         border: 5px;
@@ -24,6 +25,7 @@ ul{
         background-color: var(--white);
     color: var(--dark-gray);
     border: none;
+    
         padding: 16px;
         cursor: pointer;
         transition: .25s;
@@ -40,7 +42,7 @@ ul{
             margin-top: 36px;
             margin-bottom: 36px;
             display: grid;
-            grid-template-columns: 24px 14% 14% 14% 14% 14% 14% 14% 24px;
+            grid-template-columns: 12px 14% 14% 14% 14% 14% 14% 14% 12px;
             grid-template-areas: 
             ". l-but .  month month month . r-but ."
             ". sun mon tue wed thur fri sat ."

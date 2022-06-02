@@ -11,10 +11,12 @@ ul{
 
     padding-top: 16px;
     display: grid;
-    grid-template-columns: 16px auto auto auto auto auto 16px;
+    grid-template-columns: 16px auto auto auto 16px;
     grid-template-areas: 
-    ". b1 b2 b3 b4 b4 ."
-    ". b5 b6 b7 b8 . .";
+    ". b1 b2 b2 ."
+    ". b3 b3 b4 ."
+    ". b5 b6 b6 ."
+    ". b7 b7 b8 .";
     
 }
 
