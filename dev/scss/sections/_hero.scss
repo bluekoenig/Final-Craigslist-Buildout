@@ -5,6 +5,7 @@
 }    
 
 .button-grid{
+    margin-top: 36px;
     display: grid;
   grid-template-columns: 15% auto 15%;
 grid-template-areas: ". post-button .";
@@ -14,7 +15,10 @@ grid-template-areas: ". post-button .";
     display: grid;
     text-align: center;
     grid-template-areas: ". callout .";
+    margin-top: 36px;
 grid-template-columns: 16px auto 16px;
+font-size: rem-calc(36);
+color: var(--eggplant);
     h3{
     
         grid-area: callout;

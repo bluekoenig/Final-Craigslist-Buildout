@@ -10,8 +10,16 @@
         ". map-image . ."
         ". rem-text . .";
     
-    
-        @include md{
+    @include md{
+        grid-template-columns: 16px 10% auto 10% 16px;
+        width: 100%;
+        grid-template-areas:
+        ". . rem-title . ."
+        ". . map-image . ."
+        ". . rem-text . .";
+    }
+
+        @include lg{
             grid-template-columns: 10% auto auto 10%;
             grid-template-areas:
             ". map-image rem-title ."
@@ -25,7 +33,7 @@
 
 .rem-text{
     grid-area: rem-text; 
-
+margin: 24px 0px 24px 0px;
 
 }
 
@@ -33,6 +41,9 @@
  
         grid-area: rem-title;
 text-align: center;
+font-size: rem-calc(24);
+color: var(--eggplant);
+margin-bottom: 24px;
     }
 
  

@@ -1,16 +1,18 @@
 #nearby{
+    
     h2{
-        margin-top: 24px;
-        margin-left: 16px; 
+        margin-top: 120px;
         // temporary
         display: grid;
-       
+        font-size: rem-calc(36);
+        color: var(--eggplant);
+        text-align: center;
     }
 ul{
     align-content: center;
     padding-top: 16px;
     display: grid;
-    grid-template-columns: 24px auto auto auto 24px;
+    grid-template-columns: 16px auto auto auto 16px;
     grid-template-areas: 
     ". b1 b2 b3 . "
     ". b5 b5 b6 ."
@@ -21,7 +23,7 @@ ul{
 }
 button{
     width: 90%;
-    padding: 16px 24px 16px 24px;
+    padding: 36px 24px 36px 24px;
     margin: 8px;
        
     }
@@ -60,16 +62,27 @@ button{
     grid-area: b10;
 }
 
-.page-thru{
+#page-thru{
     
     
 ul{
-    display: grid;
-    grid-template-columns: 16px auto auto auto auto auto auto 16px;
-    li{
+    display: flex;
+    justify-content: center;
+    // grid-template-columns: 16px auto auto auto auto auto auto 16px;
+    // li{
        
-        grid-template-areas: 
-        ". p1 p2 p3 p4 p5 p6 .";
+    //     grid-template-areas: 
+    //     ". p1 p2 p3 p4 p5 p6 .";
+    // }
+    button{
+        cursor: pointer;
+        transition: .25s;
+    
+        &:hover{
+          background-color: var(--tulip);
+          color: var(--white);
+          border-radius: 50px;
+        }
     }
     
     
