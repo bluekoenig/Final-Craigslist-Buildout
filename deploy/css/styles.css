@@ -579,12 +579,17 @@ header {
 
 .header-grid {
   width: 100%;
-  padding-top: 16px;
+  padding: 24px 16px 24px 16px;
   display: grid;
   align-content: center;
   gap: 16px;
   grid-template-columns: 8px 25% 40% 20% 8px;
   grid-template-areas: ". header search nav .";
+}
+@media (min-width: 768px) {
+  .header-grid {
+    gap: 24px;
+  }
 }
 
 .logo {
@@ -621,6 +626,8 @@ header {
 
 .nav {
   grid-area: nav;
+  display: flex;
+  align-items: center;
 }
 
 /* =============
@@ -636,36 +643,51 @@ footer ul {
   grid-template-columns: 25% auto auto 25%;
   grid-template-areas: ". f1 f5 ." ". f2 f6 ." ". f3 f7 ." ". f4 f8 .";
 }
+@media (min-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+  }
+}
 
 .f1 {
+  margin-top: 8px;
   grid-area: f1;
 }
 
 .f2 {
+  margin-top: 8px;
   grid-area: f2;
 }
 
 .f3 {
+  margin-top: 8px;
   grid-area: f3;
 }
 
 .f4 {
+  margin-top: 8px;
   grid-area: f4;
 }
 
 .f5 {
+  margin-top: 8px;
   grid-area: f5;
 }
 
 .f6 {
+  margin-top: 8px;
   grid-area: f6;
 }
 
 .f7 {
+  margin-top: 8px;
   grid-area: f7;
 }
 
 .f8 {
+  margin-top: 8px;
   grid-area: f8;
 }
 
@@ -774,6 +796,7 @@ footer ul {
 }
 
 .mega-calendar {
+  grid-area: baby-calendar;
   margin-top: 120px;
   grid-area: mega-calendar;
   font-size: 1.125rem;
@@ -977,13 +1000,27 @@ footer ul {
   border-radius: 50px;
   box-sizing: border-box;
 }
+@media (min-width: 768px) {
+  .border-grid {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
 
 .local-cal {
   margin: 16px 16px 0px 16px;
-  padding: 16px 0px 16px 16px;
+  padding: 24px 0px 16px 16px;
   background-color: var(--lavendar);
   border-radius: 50px;
   box-sizing: border-box;
+  justify-items: center;
+  color: var(--deep-iris);
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .local-cal {
+    margin: 24px 56px 0px 56px;
+  }
 }
 .local-cal ul {
   width: 100%;
@@ -995,57 +1032,50 @@ footer ul {
   grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
   width: 100%;
 }
-.local-cal button {
+@media (min-width: 768px) {
+  .local-cal ul li {
+    margin-top: 24px;
+  }
+}
+.local-cal ul button {
   border: none;
   border-radius: 50px;
   margin-bottom: 16px;
 }
-
-.e1 {
+.local-cal .e1 {
   grid-area: e1;
 }
-
-.e2 {
+.local-cal .e2 {
   grid-area: e2;
 }
-
-.e3 {
+.local-cal .e3 {
   grid-area: e3;
 }
-
-.e4 {
+.local-cal .e4 {
   grid-area: e4;
 }
-
-.e5 {
+.local-cal .e5 {
   grid-area: e5;
 }
-
-.e6 {
+.local-cal .e6 {
   grid-area: e6;
 }
-
-.n1 {
+.local-cal .n1 {
   grid-area: n1;
 }
-
-.n2 {
+.local-cal .n2 {
   grid-area: n2;
 }
-
-.n3 {
+.local-cal .n3 {
   grid-area: n3;
 }
-
-.n4 {
+.local-cal .n4 {
   grid-area: n4;
 }
-
-.n5 {
+.local-cal .n5 {
   grid-area: n5;
 }
-
-.n6 {
+.local-cal .n6 {
   grid-area: n6;
 }
 
@@ -1054,6 +1084,13 @@ footer ul {
   text-align: center;
   color: var(--eggplant);
   font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .baby-calendar {
+    grid-template-columns: 16px 10% auto 10% 16px;
+    grid-template-areas: ". . baby-calendar . .";
+  }
 }
 
 #hero img {
@@ -1096,6 +1133,14 @@ footer ul {
   display: grid;
   grid-template-columns: 24px auto auto auto 24px;
   grid-template-areas: ". b1 b1 b1 ." ". b2 b2 b2 ." ". b3 b3 b3 ." ". b4 b4 b4 ." ". b5 b5 b5 ." ". b6 b6 b7 ." ". b8 b8 b8 ." ". b9 b9 b9 ." ". b10 b10 b10 ." ". b12 b12 b12 ." ". b11 b11 b13 ." ". b14 b14 b14 .";
+  gap: 8px;
+}
+@media (min-width: 768px) {
+  #more ul {
+    grid-template-columns: 16px 10% auto auto auto 10% 16px;
+    gap: 8px;
+    grid-template-areas: ". . b1 b1 b1 . ." ". . b2 b2 b2 . ." ". . b3 b3 b3 . ." ". . b4 b4 b4 . ." ". . b5 b5 b5 . ." ". . b6 b6 b7 . ." ". . b8 b8 b8 . ." ". . b9 b9 b9 . ." ". . b10 b10 b10 . ." ". . b12 b12 b12 . ." ". . b11 b11 b13 . ." ". . b14 b14 b14 . .";
+  }
 }
 #more button {
   width: 100%;
@@ -1164,12 +1209,28 @@ footer ul {
 }
 @media (min-width: 768px) {
   .back-top button {
-    margin: 56px;
-    padding: 16px;
     display: block;
-    border-radius: 40px;
-    border: 5px;
+    margin: 72px 0px 72px 72px;
+    background-color: transparent;
     border-color: var(--wow-pink);
+    border-style: solid;
+    border-width: 5px;
+    padding: 8px 42px 8px 42px;
+    border-radius: 15px;
+  }
+  .back-top button a:link,
+.back-top button a:visited {
+    text-decoration: none;
+    transition: 0.5s;
+    color: var(--eggplant);
+    padding: 8px 42px 8px 42px;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  .back-top button a:link:hover, .back-top button a:link:active,
+.back-top button a:visited:hover,
+.back-top button a:visited:active {
+    color: var(--dark-dark-blue);
   }
 }
 
@@ -1212,8 +1273,15 @@ footer ul {
   grid-template-columns: 16px auto auto auto 16px;
   grid-template-areas: ". b1 b2 b3 . " ". b5 b5 b6 ." ". b4 b8 b8 ." ". b9 b9 b9 ." ". b10 b7 b7 .";
 }
+@media (min-width: 768px) {
+  #nearby ul {
+    grid-template-columns: 16px 10% auto auto auto 10% 16px;
+    gap: 8px;
+    grid-template-areas: ". . b1 b2 b3 . . " ". . b5 b5 b6 . ." ". . b4 b8 b8 . ." ". . b9 b9 b9 . ." ". . b10 b7 b7 . .";
+  }
+}
 #nearby button {
-  width: 90%;
+  width: 100%;
   padding: 36px 24px 36px 24px;
   margin: 8px;
 }

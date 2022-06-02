@@ -13,6 +13,8 @@ ul{
         }
 
 .mega-calendar{
+    grid-area: baby-calendar;
+
     margin-top: 120px;
     grid-area: mega-calendar;
     font-size: rem-calc(18);
@@ -52,6 +54,8 @@ ul{
             ". c15 c16 c17 c18 c19 c20 c21 ."
             ". c22 c23 c24 c25 c26 c27 c28 ."
             ". c29 c30 c31 . . . . .";
+
+            
         }
     }
    
@@ -227,6 +231,11 @@ ul{
         border-radius: 50px;
         box-sizing: border-box;
     }
+
+    @include md{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
    
 }
     
@@ -234,10 +243,18 @@ ul{
 .local-cal{
    
     margin: 16px 16px 0px 16px;
-    padding: 16px 0px 16px 16px;
+    padding: 24px 0px 16px 16px;
     background-color: var(--lavendar);
     border-radius: 50px;
     box-sizing: border-box;
+    justify-items: center;
+    color: var(--deep-iris);
+    text-align: center;
+
+    @include md{
+        margin: 24px 56px 0px 56px;
+
+    }
     
         ul{
             width: 100%;
@@ -254,6 +271,9 @@ ul{
                 ". e6 . n6 .";
 
                 width: 100%;
+
+                @include md{
+                    margin-top: 24px;
             }
            
        
@@ -322,9 +342,22 @@ ul{
    
 // }
 
+
+}
+
 .headline-fixer{
     margin-top: 24px;
     text-align: center;
     color: var(--eggplant);
     font-size: rem-calc(36);
+}
+
+.baby-calendar{
+    
+    
+    @include md{
+        grid-template-columns: 16px 10% auto 10% 16px;
+        grid-template-areas: 
+    ". . baby-calendar . .";
+    }
 }

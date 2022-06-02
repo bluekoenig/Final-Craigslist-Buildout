@@ -19,10 +19,21 @@ ul{
     ". b4 b8 b8 ."
     ". b9 b9 b9 ."
     ". b10 b7 b7 .";
+
+    @include md{
+        grid-template-columns: 16px 10% auto auto auto 10% 16px;
+        gap: 8px;
+        grid-template-areas: 
+        ". . b1 b2 b3 . . "
+        ". . b5 b5 b6 . ."
+        ". . b4 b8 b8 . ."
+        ". . b9 b9 b9 . ."
+        ". . b10 b7 b7 . .";
+    }
     
 }
 button{
-    width: 90%;
+    width: 100%;
     padding: 36px 24px 36px 24px;
     margin: 8px;
        
