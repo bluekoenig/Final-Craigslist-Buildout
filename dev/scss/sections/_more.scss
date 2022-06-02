@@ -2,7 +2,6 @@
     h2{
         margin-top: 120px;
         margin-left: 16px; 
-        // temporary
         font-size: rem-calc(36);
         color: var(--eggplant);
         text-align: center;
@@ -125,7 +124,7 @@ button{
 
                 &:hover,
                 &:active {
-                    color: var(--dark-dark-blue)
+                    color: var(--wow-pink)
                 }
             }
         }
