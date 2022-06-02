@@ -565,6 +565,9 @@ header {
     margin-right: auto;
   }
 }
+header section {
+  width: 100%;
+}
 @media (min-width: 768px) {
   header section h1 {
     display: block;
@@ -579,16 +582,16 @@ header {
 
 .header-grid {
   width: 100%;
-  padding: 24px 16px 24px 16px;
+  padding: 24px 0px 24px 0px;
   display: grid;
   align-content: center;
   gap: 16px;
-  grid-template-columns: 8px 25% 40% 20% 8px;
+  grid-template-columns: 24px 20% 40% 20% 0px;
   grid-template-areas: ". header search nav .";
 }
 @media (min-width: 768px) {
   .header-grid {
-    gap: 24px;
+    gap: 36px;
   }
 }
 
