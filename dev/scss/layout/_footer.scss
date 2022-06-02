@@ -5,7 +5,10 @@ footer{
     background-color: var(--dark-gray);
     color: var(--light-gray);
     padding: 24px 0px 24px 0px;
+   
+    
 ul{
+   
     display: grid;
     grid-template-columns: 25% auto auto 25%;
     grid-template-areas: 
@@ -14,8 +17,13 @@ ul{
     ". f3 f7 ."
     ". f4 f8 .";
 }
+
+
+    
+} 
+
    
-}
+
 
 .f1{
     grid-area: f1;
