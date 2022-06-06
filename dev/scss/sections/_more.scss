@@ -5,6 +5,11 @@
         font-size: rem-calc(36);
         color: var(--eggplant);
         text-align: center;
+
+        @include lg{
+            text-align: left;
+            margin-left: 10%;
+        }
        
     }
 ul{
@@ -105,7 +110,7 @@ button{
 
         @include md{
             display: block;
-            margin: 72px 0px 72px 72px;
+            margin: 72px 0px 72px 10%;
             background-color: transparent;
         border-color: var(--wow-pink);
         border-style: solid;

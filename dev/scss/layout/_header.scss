@@ -116,5 +116,30 @@ padding: 24px 0px 24px 0px;
     grid-area: nav;
     display: flex;
     align-items: center;
+    color: var(--tulip);
+}
+
+.nav-grid{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "n1 n2 n3 n4 n5";
+}
+
+.n1{
+    grid-area: n1;
+    color: var(--tulip);
+}
+.n2{
+    grid-area: n2;
+}
+.n3{
+    grid-area: n3;
+}
+.n4{
+    grid-area: n4;
+}
+.n5{
+    grid-area: n5;
 }
 

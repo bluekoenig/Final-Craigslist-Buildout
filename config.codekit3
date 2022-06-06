@@ -49,6 +49,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/images\/categories-svgrepo-com.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/images\/categories-svgrepo-com.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/images\/chevron-right.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -147,6 +157,36 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/images\/map-svgrepo-com.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/images\/map-svgrepo-com.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/images\/pin-post-svgrepo-com.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/images\/pin-post-svgrepo-com.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/images\/speech-bubble-svgrepo-com.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/images\/speech-bubble-svgrepo-com.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/images\/Vector.svg" : {
       "ft" : 2097152,

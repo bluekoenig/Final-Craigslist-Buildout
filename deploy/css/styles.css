@@ -513,6 +513,11 @@ address {
   border-radius: 40px;
   font-size: 1.5rem;
 }
+@media (min-width: 1024px) {
+  .button li button {
+    font-size: 1.25rem;
+  }
+}
 
 .post-button {
   margin: auto 24px auto 24px;
@@ -631,6 +636,34 @@ header section {
   grid-area: nav;
   display: flex;
   align-items: center;
+  color: var(--tulip);
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-areas: "n1 n2 n3 n4 n5";
+}
+
+.n1 {
+  grid-area: n1;
+  color: var(--tulip);
+}
+
+.n2 {
+  grid-area: n2;
+}
+
+.n3 {
+  grid-area: n3;
+}
+
+.n4 {
+  grid-area: n4;
+}
+
+.n5 {
+  grid-area: n5;
 }
 
 /* =============
@@ -717,12 +750,18 @@ footer ul {
 }
 
 .featured h2 {
-  margin-top: 72px;
+  margin-top: 124px;
   margin-left: 16px;
   display: grid;
   font-size: 2.25rem;
   color: var(--eggplant);
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .featured h2 {
+    text-align: left;
+    margin-left: 10%;
+  }
 }
 .featured ul {
   padding-top: 16px;
@@ -734,6 +773,12 @@ footer ul {
   .featured ul {
     grid-template-columns: 16px 10% auto auto auto 10% 16px;
     grid-template-areas: ". . b1 b2 b2 . ." ". . b3 b3 b4 . ." ". . b5 b6 b6 . ." ". . b7 b7 b8.  .";
+  }
+}
+@media (min-width: 1024px) {
+  .featured ul {
+    grid-template-columns: 72px auto auto auto auto auto 72px;
+    grid-template-areas: ". b1 b2 b2 b3 b3 ." ". b4 b5 b6 b7 b8 .";
   }
 }
 .featured button {
@@ -800,12 +845,12 @@ footer ul {
 
 .mega-calendar {
   grid-area: baby-calendar;
-  margin-top: 120px;
+  margin-top: 124px;
   grid-area: mega-calendar;
   font-size: 1.125rem;
 }
 .mega-calendar div {
-  margin-top: 24px;
+  margin-top: 36px;
   border: 5px;
   border-color: var(--tulip);
   box-sizing: border-box;
@@ -1017,8 +1062,10 @@ footer ul {
   border-radius: 50px;
   box-sizing: border-box;
   justify-items: center;
+  align-items: center;
   color: var(--deep-iris);
   text-align: center;
+  font-size: 1.125rem;
 }
 @media (min-width: 768px) {
   .local-cal {
@@ -1088,6 +1135,12 @@ footer ul {
   color: var(--eggplant);
   font-size: 2.25rem;
 }
+@media (min-width: 1024px) {
+  .headline-fixer {
+    text-align: left;
+    margin-left: 10%;
+  }
+}
 
 @media (min-width: 768px) {
   .baby-calendar {
@@ -1130,6 +1183,12 @@ footer ul {
   font-size: 2.25rem;
   color: var(--eggplant);
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #more h2 {
+    text-align: left;
+    margin-left: 10%;
+  }
 }
 #more ul {
   padding-top: 16px;
@@ -1213,7 +1272,7 @@ footer ul {
 @media (min-width: 768px) {
   .back-top button {
     display: block;
-    margin: 72px 0px 72px 72px;
+    margin: 72px 0px 72px 10%;
     background-color: transparent;
     border-color: var(--wow-pink);
     border-style: solid;
@@ -1268,6 +1327,12 @@ footer ul {
   font-size: 2.25rem;
   color: var(--eggplant);
   text-align: center;
+}
+@media (min-width: 1024px) {
+  #nearby h2 {
+    text-align: left;
+    margin-left: 10%;
+  }
 }
 #nearby ul {
   align-content: center;
@@ -1338,13 +1403,13 @@ footer ul {
   transition: 0.25s;
 }
 #page-thru ul button:hover {
-  background-color: var(--tulip);
-  color: var(--white);
+  background-color: transparent;
+  color: var(--tulip);
   border-radius: 50px;
 }
 #page-thru button {
   background-color: transparent;
-  color: var(--eggplant);
+  color: var(--blueberry);
   border: none;
 }
 
@@ -1394,12 +1459,23 @@ footer ul {
   .reimagined {
     grid-template-columns: 10% auto auto 10%;
     grid-template-areas: ". map-image rem-title ." ". map-image rem-text .";
+    margin-top: 124px;
   }
 }
 
 .rem-text {
   grid-area: rem-text;
   margin: 24px 0px 24px 0px;
+  font-size: 1rem;
+  color: var(--eggplant);
+  line-height: 175%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .rem-text {
+    text-align: left;
+    margin-left: 24px;
+  }
 }
 
 .rem-title {
@@ -1408,6 +1484,11 @@ footer ul {
   font-size: 1.5rem;
   color: var(--eggplant);
   margin-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  .rem-title {
+    margin-left: 24px;
+  }
 }
 
 .map-image {

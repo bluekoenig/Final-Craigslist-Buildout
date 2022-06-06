@@ -1,13 +1,18 @@
 .featured{
    
     h2{
-        margin-top: 72px;
+        margin-top: 124px;
         margin-left: 16px; 
         // temporary
         display: grid;
         font-size: rem-calc(36);
         color: var(--eggplant);
         text-align: center;
+
+        @include lg{
+            text-align: left;
+            margin-left: 10%;
+        }
        
     }
 ul{
@@ -28,6 +33,14 @@ ul{
     ". . b3 b3 b4 . ."
     ". . b5 b6 b6 . ."
     ". . b7 b7 b8.  .";
+    }
+
+    @include lg{
+        grid-template-columns: 72px auto auto auto auto auto 72px;
+        grid-template-areas: 
+    ". b1 b2 b2 b3 b3 ."
+    ". b4 b5 b6 b7 b8 .";
+    
     }
     
 }

@@ -24,6 +24,8 @@
             grid-template-areas:
             ". map-image rem-title ."
             ". map-image rem-text .";
+
+            margin-top: 124px;
         }
     }
 
@@ -34,6 +36,17 @@
 .rem-text{
     grid-area: rem-text; 
 margin: 24px 0px 24px 0px;
+font-size: rem-calc(16);
+color: var(--eggplant);
+line-height: 175%;
+text-align: center;
+
+
+@include lg{
+    text-align: left;
+    margin-left: 24px;
+
+}
 
 }
 
@@ -44,6 +57,10 @@ text-align: center;
 font-size: rem-calc(24);
 color: var(--eggplant);
 margin-bottom: 24px;
+
+@include lg{
+    margin-left: 24px;
+}
     }
 
  
@@ -54,5 +71,7 @@ margin-bottom: 24px;
 .map-image{
     grid-area: map-image;
    width: 100%;
+
+   
    
 }
