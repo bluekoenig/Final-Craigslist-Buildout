@@ -20,10 +20,10 @@
     }
 
         @include lg{
-            grid-template-columns: 10% auto auto 10%;
+            grid-template-columns: 10% 40% 16px auto 10%;
             grid-template-areas:
-            ". map-image rem-title ."
-            ". map-image rem-text .";
+            ". map-image . rem-title ."
+            ". map-image . rem-text .";
 
             margin-top: 124px;
         }
@@ -72,6 +72,9 @@ margin-bottom: 24px;
     grid-area: map-image;
    width: 100%;
 
+   @include lg{
+       width: fit-content;
+   }
    
    
 }

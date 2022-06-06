@@ -846,6 +846,12 @@ footer ul {
   color: var(--white);
   padding: 16px 72px 16px 72px;
 }
+@media (min-width: 1024px) {
+  .cal-button ul li button {
+    padding: 16px 36px 16px 36px;
+    font-size: 0.875rem;
+  }
+}
 
 .mega-calendar {
   grid-area: baby-calendar;
@@ -1317,16 +1323,13 @@ footer ul {
   .local-cal div {
     margin: 0px;
     margin-right: 16px;
+    margin-top: 24px;
   }
-}
-.local-cal div ul {
-  width: 100%;
 }
 .local-cal div ul li {
   display: grid;
   grid-template-columns: 16px 50% 8px 40% 16px;
   grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
-  width: 100%;
 }
 @media (min-width: 768px) {
   .local-cal div ul li {
@@ -1337,6 +1340,11 @@ footer ul {
   border: none;
   border-radius: 50px;
   margin-bottom: 16px;
+}
+@media (min-width: 1024px) {
+  .local-cal div ul button {
+    margin-bottom: 18px;
+  }
 }
 
 .e1 {
@@ -1389,7 +1397,7 @@ footer ul {
 }
 
 .headline-fixer {
-  margin-top: 24px;
+  margin-top: 124px;
   text-align: center;
   color: var(--eggplant);
   font-size: 2.25rem;
@@ -1468,6 +1476,13 @@ footer ul {
     grid-template-columns: 16px 10% auto auto auto 10% 16px;
     gap: 8px;
     grid-template-areas: ". . b1 b1 b1 . ." ". . b2 b2 b2 . ." ". . b3 b3 b3 . ." ". . b4 b4 b4 . ." ". . b5 b5 b5 . ." ". . b6 b6 b7 . ." ". . b8 b8 b8 . ." ". . b9 b9 b9 . ." ". . b10 b10 b10 . ." ". . b12 b12 b12 . ." ". . b11 b11 b13 . ." ". . b14 b14 b14 . .";
+  }
+}
+@media (min-width: 1024px) {
+  #more ul {
+    grid-template-columns: 72px auto auto auto auto auto 72px;
+    gap: 8px;
+    grid-template-areas: ". b1 b1 b2 b2 b2 ." ". b3 b3 b3 b4 b4 ." ". b5 b5 b6 b6 b6 ." ". b9 b9 b9 b7 b8 ." ". b10 b10 b10 b12 b12 ." ". b11 b11 b13 b13 b13 ." ". . b14 b14 b14 . .";
   }
 }
 #more button {
@@ -1588,7 +1603,7 @@ footer ul {
 }
 
 #nearby h2 {
-  margin-top: 120px;
+  margin-top: 124px;
   display: grid;
   font-size: 2.25rem;
   color: var(--eggplant);
@@ -1612,6 +1627,13 @@ footer ul {
     grid-template-columns: 16px 10% auto auto auto 10% 16px;
     gap: 8px;
     grid-template-areas: ". . b1 b2 b3 . . " ". . b5 b5 b6 . ." ". . b4 b8 b8 . ." ". . b9 b9 b9 . ." ". . b10 b7 b7 . .";
+  }
+}
+@media (min-width: 1024px) {
+  #nearby ul {
+    grid-template-columns: 72px auto auto auto auto auto 72px;
+    gap: 8px;
+    grid-template-areas: ". b1 b1 b2 b3 b3 . " ". b5 b5 b5 b6 b4 ." ". b8 b8 b9 b9 b9 ." ". b7 b7 b7 b10 b10 .";
   }
 }
 #nearby button {
@@ -1723,8 +1745,8 @@ footer ul {
 }
 @media (min-width: 1024px) {
   .reimagined {
-    grid-template-columns: 10% auto auto 10%;
-    grid-template-areas: ". map-image rem-title ." ". map-image rem-text .";
+    grid-template-columns: 10% 40% 16px auto 10%;
+    grid-template-areas: ". map-image . rem-title ." ". map-image . rem-text .";
     margin-top: 124px;
   }
 }
@@ -1760,4 +1782,9 @@ footer ul {
 .map-image {
   grid-area: map-image;
   width: 100%;
+}
+@media (min-width: 1024px) {
+  .map-image {
+    width: fit-content;
+  }
 }
