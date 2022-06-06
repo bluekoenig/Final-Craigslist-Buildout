@@ -1354,6 +1354,7 @@ footer ul {
 @media (min-width: 1024px) {
   .local-cal div {
     margin: 24px 16px 24px 16px;
+    padding-right: 16px;
   }
 }
 @media (min-width: 1440px) {
