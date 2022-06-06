@@ -642,28 +642,32 @@ header section {
 .nav-grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  grid-template-areas: "n1 n2 n3 n4 n5";
+  grid-template-areas: "r1 r2 r3 r4 r5";
 }
 
-.n1 {
-  grid-area: n1;
-  color: var(--tulip);
+.r1 {
+  grid-area: r1;
+  width: 16px;
 }
 
-.n2 {
-  grid-area: n2;
+.r2 {
+  grid-area: r2;
+  width: 16px;
 }
 
-.n3 {
-  grid-area: n3;
+.r3 {
+  grid-area: r3;
+  width: 16px;
 }
 
-.n4 {
-  grid-area: n4;
+.r4 {
+  grid-area: r4;
+  width: 16px;
 }
 
-.n5 {
-  grid-area: n5;
+.r5 {
+  grid-area: r5;
+  width: 16px;
 }
 
 /* =============
@@ -850,12 +854,27 @@ footer ul {
   font-size: 1.125rem;
 }
 .mega-calendar div {
-  margin-top: 36px;
-  border: 5px;
-  border-color: var(--tulip);
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border: 8px solid var(--tulip);
+  border-radius: 50px;
   box-sizing: border-box;
 }
-.mega-calendar div button {
+@media (min-width: 768px) {
+  .mega-calendar {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+@media (min-width: 1024px) {
+  .mega-calendar {
+    border: none;
+    margin: 0px;
+    margin-left: 24px;
+  }
+}
+.mega-calendar button {
   background-color: var(--white);
   color: var(--dark-gray);
   border: none;
@@ -863,18 +882,24 @@ footer ul {
   cursor: pointer;
   transition: 0.25s;
 }
-.mega-calendar div button:hover {
+.mega-calendar button:hover {
   background-color: var(--tulip);
   color: var(--white);
   border-radius: 50px;
 }
-.mega-calendar div ul {
+.mega-calendar ul {
   text-align: center;
   margin-top: 36px;
   margin-bottom: 36px;
   display: grid;
   grid-template-columns: 12px 14% 14% 14% 14% 14% 14% 14% 12px;
   grid-template-areas: ". l-but .  month month month . r-but ." ". sun mon tue wed thur fri sat ." ". c1 c2 c3 c4 c5 c6 c7 ." ". c8 c9 c10 c11 c12 c13 c14 ." ". c15 c16 c17 c18 c19 c20 c21 ." ". c22 c23 c24 c25 c26 c27 c28 ." ". c29 c30 c31 . . . . .";
+}
+@media (min-width: 1024px) {
+  .mega-calendar ul {
+    margin: 36px;
+    font-size: 1.125rem;
+  }
 }
 
 .l-but {
@@ -887,177 +912,393 @@ footer ul {
 
 .month {
   grid-area: month;
+  font-size: 1.5rem;
 }
 
 .sun {
   grid-area: sun;
 }
+@media (min-width: 1024px) {
+  .sun {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .mon {
   grid-area: mon;
+}
+@media (min-width: 1024px) {
+  .mon {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .tue {
   grid-area: tue;
 }
+@media (min-width: 1024px) {
+  .tue {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .wed {
   grid-area: wed;
+}
+@media (min-width: 1024px) {
+  .wed {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .thur {
   grid-area: thur;
 }
+@media (min-width: 1024px) {
+  .thur {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .fri {
   grid-area: fri;
+}
+@media (min-width: 1024px) {
+  .fri {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .sat {
   grid-area: sat;
 }
+@media (min-width: 1024px) {
+  .sat {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c1 {
   grid-area: c1;
+}
+@media (min-width: 1024px) {
+  .c1 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c2 {
   grid-area: c2;
 }
+@media (min-width: 1024px) {
+  .c2 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c3 {
   grid-area: c3;
+}
+@media (min-width: 1024px) {
+  .c3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c4 {
   grid-area: c4;
 }
+@media (min-width: 1024px) {
+  .c4 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c5 {
   grid-area: c5;
+}
+@media (min-width: 1024px) {
+  .c5 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c6 {
   grid-area: c6;
 }
+@media (min-width: 1024px) {
+  .c6 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c7 {
   grid-area: c7;
+}
+@media (min-width: 1024px) {
+  .c7 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c8 {
   grid-area: c8;
 }
+@media (min-width: 1024px) {
+  .c8 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c9 {
   grid-area: c9;
+}
+@media (min-width: 1024px) {
+  .c9 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c10 {
   grid-area: c10;
 }
+@media (min-width: 1024px) {
+  .c10 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c11 {
   grid-area: c11;
+}
+@media (min-width: 1024px) {
+  .c11 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c12 {
   grid-area: c12;
 }
+@media (min-width: 1024px) {
+  .c12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c13 {
   grid-area: c13;
+}
+@media (min-width: 1024px) {
+  .c13 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c14 {
   grid-area: c14;
 }
+@media (min-width: 1024px) {
+  .c14 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c15 {
   grid-area: c15;
+}
+@media (min-width: 1024px) {
+  .c15 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c16 {
   grid-area: c16;
 }
+@media (min-width: 1024px) {
+  .c16 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c17 {
   grid-area: c17;
+}
+@media (min-width: 1024px) {
+  .c17 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c18 {
   grid-area: c18;
 }
+@media (min-width: 1024px) {
+  .c18 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c19 {
   grid-area: c19;
+}
+@media (min-width: 1024px) {
+  .c19 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c20 {
   grid-area: c20;
 }
+@media (min-width: 1024px) {
+  .c20 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c21 {
   grid-area: c21;
+}
+@media (min-width: 1024px) {
+  .c21 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c22 {
   grid-area: c22;
 }
+@media (min-width: 1024px) {
+  .c22 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c23 {
   grid-area: c23;
+}
+@media (min-width: 1024px) {
+  .c23 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c24 {
   grid-area: c24;
 }
+@media (min-width: 1024px) {
+  .c24 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c25 {
   grid-area: c25;
+}
+@media (min-width: 1024px) {
+  .c25 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c26 {
   grid-area: c26;
 }
+@media (min-width: 1024px) {
+  .c26 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c27 {
   grid-area: c27;
+}
+@media (min-width: 1024px) {
+  .c27 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c28 {
   grid-area: c28;
 }
+@media (min-width: 1024px) {
+  .c28 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c29 {
   grid-area: c29;
+}
+@media (min-width: 1024px) {
+  .c29 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 .c30 {
   grid-area: c30;
 }
+@media (min-width: 1024px) {
+  .c30 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
 
 .c31 {
   grid-area: c31;
 }
-
-.border-grid div {
-  margin-left: 24px;
-  margin-right: 24px;
-  border: 8px solid var(--tulip);
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-@media (min-width: 768px) {
-  .border-grid {
-    margin-left: 48px;
-    margin-right: 48px;
+@media (min-width: 1024px) {
+  .c31 {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 
-.local-cal {
+.local-cal div {
+  grid-area: local-cal;
   margin: 16px 16px 0px 16px;
-  padding: 24px 0px 16px 16px;
+  padding: 16px 0px 16px 16px;
   background-color: var(--lavendar);
   border-radius: 50px;
   box-sizing: border-box;
@@ -1068,64 +1309,82 @@ footer ul {
   font-size: 1.125rem;
 }
 @media (min-width: 768px) {
-  .local-cal {
+  .local-cal div {
     margin: 24px 56px 0px 56px;
   }
 }
-.local-cal ul {
+@media (min-width: 1024px) {
+  .local-cal div {
+    margin: 0px;
+    margin-right: 16px;
+  }
+}
+.local-cal div ul {
   width: 100%;
 }
-.local-cal ul li {
+.local-cal div ul li {
   display: grid;
-  grid-area: local-cal;
   grid-template-columns: 16px 50% 8px 40% 16px;
   grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
   width: 100%;
 }
 @media (min-width: 768px) {
-  .local-cal ul li {
+  .local-cal div ul li {
     margin-top: 24px;
   }
 }
-.local-cal ul button {
+.local-cal div ul button {
   border: none;
   border-radius: 50px;
   margin-bottom: 16px;
 }
-.local-cal .e1 {
+
+.e1 {
   grid-area: e1;
 }
-.local-cal .e2 {
+
+.e2 {
   grid-area: e2;
 }
-.local-cal .e3 {
+
+.e3 {
   grid-area: e3;
 }
-.local-cal .e4 {
+
+.e4 {
   grid-area: e4;
 }
-.local-cal .e5 {
+
+.e5 {
   grid-area: e5;
 }
-.local-cal .e6 {
+
+.e6 {
   grid-area: e6;
 }
-.local-cal .n1 {
+
+.n1 {
   grid-area: n1;
+  padding: 0px 16px 0px 16px;
 }
-.local-cal .n2 {
+
+.n2 {
   grid-area: n2;
 }
-.local-cal .n3 {
+
+.n3 {
   grid-area: n3;
 }
-.local-cal .n4 {
+
+.n4 {
   grid-area: n4;
 }
-.local-cal .n5 {
+
+.n5 {
   grid-area: n5;
 }
-.local-cal .n6 {
+
+.n6 {
   grid-area: n6;
 }
 
@@ -1143,9 +1402,16 @@ footer ul {
 }
 
 @media (min-width: 768px) {
-  .baby-calendar {
+  #home-calendar {
     grid-template-columns: 16px 10% auto 10% 16px;
     grid-template-areas: ". . baby-calendar . .";
+  }
+}
+@media (min-width: 1024px) {
+  #home-calendar {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
   }
 }
 

@@ -123,23 +123,42 @@ padding: 24px 0px 24px 0px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-areas: 
-    "n1 n2 n3 n4 n5";
+    "r1 r2 r3 r4 r5";
 }
 
-.n1{
-    grid-area: n1;
-    color: var(--tulip);
-}
-.n2{
-    grid-area: n2;
-}
-.n3{
-    grid-area: n3;
-}
-.n4{
-    grid-area: n4;
-}
-.n5{
-    grid-area: n5;
-}
+.r1{
+    
+        grid-area: r1;
+        width: 16px;
+    }
+  
+
+.r2{
+   
+        grid-area: r2;
+        width: 16px;
+    }
+   
+
+.r3{
+  
+        grid-area: r3;
+        width: 16px;
+    }
+   
+
+.r4{
+  
+        grid-area: r4;
+        width: 16px;
+    }
+  
+
+.r5{
+   
+        grid-area: r5;
+        width: 16px;
+    }
+   
+
 
