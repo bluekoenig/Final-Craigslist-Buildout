@@ -45,6 +45,10 @@
         margin-left: 24px;
     }
 
+   
+
+
+
 
     button {
         background-color: var(--white);
@@ -82,6 +86,10 @@
             font-size: rem-calc(18);
 
         }
+
+        // @include xxl {
+        //     padding: 24px 124px 24px 124px;
+        // }
     }
 }
 
@@ -96,14 +104,18 @@
 
     grid-area: l-but;
 
-
+@include xxl{
+    margin-right: 72px;
+}
 
 }
 
 .r-but {
 
     grid-area: r-but;
-
+    @include xxl{
+        margin-right: 72px;
+    }
 
 }
 
@@ -112,7 +124,9 @@
     grid-area: month;
     font-size: rem-calc(24);
 
-
+    @include xxl{
+        margin: 0px 72px 0px 72px;
+    }
 
 }
 
@@ -450,7 +464,7 @@
 
     @include lg {
         padding-top: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 24px;
     }
 }
 
@@ -459,7 +473,7 @@
 
     @include lg {
         padding-top: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 24px;
     }
 }
 
@@ -468,7 +482,7 @@
 
     @include lg {
         padding-top: 12px;
-        padding-bottom: 12px;
+        padding-bottom: 24px;
     }
 }
 
@@ -494,15 +508,17 @@
         }
 
         @include lg {
-            margin: 0px;
-            margin-right: 16px;
-            margin-top: 24px;
+            margin: 24px 16px 24px 16px;
+        }
+
+        @include xxl {
+            padding: 24px 124px 24px 124px;
         }
 
         ul {
             li {
                 display: grid;
-                grid-template-columns: 16px 50% 8px 40% 16px;
+                grid-template-columns: 16px 50% 16px 40% 16px;
                 grid-template-areas:
                     ". e1 . n1 ."
                     ". e2 . n2 ."
@@ -559,6 +575,7 @@
 
 .e1 {
     grid-area: e1;
+    text-align: center;
 }
 
 .e2 {
@@ -632,5 +649,10 @@
         align-content: space-between;
         justify-content: center;
 
+    }
+
+    @include xxl{
+       justify-content: center;
+       align-items: flex-start;
     }
 }

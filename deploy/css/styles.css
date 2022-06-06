@@ -555,13 +555,17 @@ textarea {
     Header
 ============= */
 header {
-  position: relative;
+  position: fixed;
   width: 100%;
-  bottom: 0;
+  bottom: 100;
   left: 0;
-  padding-bottom: 8px;
   padding-top: 8px;
   background-color: var(--dark-gray);
+}
+@media (min-width: 768px) {
+  header {
+    position: relative;
+  }
 }
 @media (min-width: 768px) {
   header div {
@@ -587,11 +591,11 @@ header section {
 
 .header-grid {
   width: 100%;
-  padding: 24px 0px 24px 0px;
+  padding: 24px 0px 24px 16px;
   display: grid;
   align-content: center;
   gap: 16px;
-  grid-template-columns: 24px 20% 40% 20% 0px;
+  grid-template-columns: 16px 20% 40% 20% 0px;
   grid-template-areas: ". header search nav .";
 }
 @media (min-width: 768px) {
@@ -636,13 +640,26 @@ header section {
   grid-area: nav;
   display: flex;
   align-items: center;
-  color: var(--tulip);
+  color: var(--poke);
 }
 
 .nav-grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
+  gap: 8px;
   grid-template-areas: "r1 r2 r3 r4 r5";
+  align-items: center;
+  justify-items: center;
+  padding-right: 16px;
+  filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
+}
+.nav-grid img {
+  width: 115%;
+}
+@media (min-width: 768px) {
+  .nav-grid img {
+    width: 150%;
+  }
 }
 
 .r1 {
@@ -736,12 +753,12 @@ footer ul {
   color: var(--tulip);
   border: none;
   border-radius: 0;
-  padding: 12px 12px 12px 12px;
+  padding: 8px 8px 8px 8px;
 }
 
 #search-header form input {
   margin-left: -30%;
-  padding: 16px 30% 16px 8px;
+  padding: 8px 30% 8px 8px;
   border: none;
   border-radius: 25px 0px 0px 25px;
 }
@@ -750,7 +767,7 @@ footer ul {
   color: var(--tulip);
   border: none;
   border-radius: 0px 25px 25px 0px;
-  padding: 12px 12px 12px 12px;
+  padding: 8px 8px 8px 8px;
 }
 
 .featured h2 {
@@ -911,14 +928,29 @@ footer ul {
 .l-but {
   grid-area: l-but;
 }
+@media (min-width: 1440px) {
+  .l-but {
+    margin-right: 72px;
+  }
+}
 
 .r-but {
   grid-area: r-but;
+}
+@media (min-width: 1440px) {
+  .r-but {
+    margin-right: 72px;
+  }
 }
 
 .month {
   grid-area: month;
   font-size: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .month {
+    margin: 0px 72px 0px 72px;
+  }
 }
 
 .sun {
@@ -1277,7 +1309,7 @@ footer ul {
 @media (min-width: 1024px) {
   .c29 {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1287,7 +1319,7 @@ footer ul {
 @media (min-width: 1024px) {
   .c30 {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1297,7 +1329,7 @@ footer ul {
 @media (min-width: 1024px) {
   .c31 {
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 24px;
   }
 }
 
@@ -1321,14 +1353,17 @@ footer ul {
 }
 @media (min-width: 1024px) {
   .local-cal div {
-    margin: 0px;
-    margin-right: 16px;
-    margin-top: 24px;
+    margin: 24px 16px 24px 16px;
+  }
+}
+@media (min-width: 1440px) {
+  .local-cal div {
+    padding: 24px 124px 24px 124px;
   }
 }
 .local-cal div ul li {
   display: grid;
-  grid-template-columns: 16px 50% 8px 40% 16px;
+  grid-template-columns: 16px 50% 16px 40% 16px;
   grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
 }
 @media (min-width: 768px) {
@@ -1349,6 +1384,7 @@ footer ul {
 
 .e1 {
   grid-area: e1;
+  text-align: center;
 }
 
 .e2 {
@@ -1420,6 +1456,12 @@ footer ul {
     display: flex;
     align-content: space-between;
     justify-content: center;
+  }
+}
+@media (min-width: 1440px) {
+  #home-calendar {
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 

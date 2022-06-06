@@ -3,10 +3,11 @@
 ============= */
 header {
 
-    position: relative;
+    position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 100;
     left: 0;
+  
 
     // @include md {
     //     position: fixed;
@@ -16,10 +17,12 @@ header {
     //     left: 0;
     // }
 
-    padding-bottom: 8px;
     padding-top: 8px;
     background-color: var(--dark-gray);
 
+    @include md{
+        position: relative;
+    }
 
     div {
 
@@ -55,11 +58,11 @@ header {
 
 .header-grid {
     width: 100%;
-padding: 24px 0px 24px 0px;
+padding: 24px 0px 24px 16px;
     display: grid;
     align-content: center;
     gap: 16px;
-    grid-template-columns: 24px 20% 40% 20% 0px;
+    grid-template-columns: 16px 20% 40% 20% 0px;
     grid-template-areas:
         ". header search nav .";
 
@@ -116,14 +119,30 @@ padding: 24px 0px 24px 0px;
     grid-area: nav;
     display: flex;
     align-items: center;
-    color: var(--tulip);
+    color: var(--poke);
 }
 
 .nav-grid{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 8px;
     grid-template-areas: 
     "r1 r2 r3 r4 r5";
+    align-items: center;
+    justify-items: center;
+    padding-right: 16px;
+    filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
+
+
+   
+        img{
+            width: 115%;
+
+            @include md{
+                width: 150%;
+        }
+    }
+    
 }
 
 .r1{
