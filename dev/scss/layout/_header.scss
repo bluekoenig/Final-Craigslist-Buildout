@@ -58,15 +58,19 @@ header {
 
 .header-grid {
     width: 100%;
-padding: 24px 0px 24px 16px;
+padding: 24px 0px 24px 0px;
     display: grid;
     align-content: center;
     gap: 16px;
-    grid-template-columns: 16px 20% 40% 20% 0px;
-    grid-template-areas:
-        ". header search nav .";
+    grid-template-columns: 16px 20% 60% 16px;
+    grid-template-areas: 
+    ". header search ."
+    ". nav nav .";
 
         @include md{
+            grid-template-columns: 16px 20% 40% 20% 0px;
+    grid-template-areas:
+        ". header search nav .";
             gap: 36px;
         }
 }
@@ -85,6 +89,7 @@ padding: 24px 0px 24px 16px;
 
 .logo {
     display: block;
+    padding-left: 24px;
 
     @include md {
         display: none;
@@ -93,6 +98,7 @@ padding: 24px 0px 24px 16px;
 
 .words {
     display: none;
+    padding-left: 24px;
 
     @include md {
         display: block;
@@ -128,22 +134,19 @@ padding: 24px 0px 24px 16px;
     gap: 8px;
     grid-template-areas: 
     "r1 r2 r3 r4 r5";
-    align-items: center;
-    justify-items: center;
-    padding-right: 16px;
+    align-items: right;
+    justify-items: right;
+    padding-right: 42px;
     filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
 
 
    
         img{
-            width: 115%;
-
-            @include md{
                 width: 150%;
         }
     }
     
-}
+
 
 .r1{
     

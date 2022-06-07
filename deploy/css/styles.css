@@ -591,21 +591,24 @@ header section {
 
 .header-grid {
   width: 100%;
-  padding: 24px 0px 24px 16px;
+  padding: 24px 0px 24px 0px;
   display: grid;
   align-content: center;
   gap: 16px;
-  grid-template-columns: 16px 20% 40% 20% 0px;
-  grid-template-areas: ". header search nav .";
+  grid-template-columns: 16px 20% 60% 16px;
+  grid-template-areas: ". header search ." ". nav nav .";
 }
 @media (min-width: 768px) {
   .header-grid {
+    grid-template-columns: 16px 20% 40% 20% 0px;
+    grid-template-areas: ". header search nav .";
     gap: 36px;
   }
 }
 
 .logo {
   display: block;
+  padding-left: 24px;
 }
 @media (min-width: 768px) {
   .logo {
@@ -615,6 +618,7 @@ header section {
 
 .words {
   display: none;
+  padding-left: 24px;
 }
 @media (min-width: 768px) {
   .words {
@@ -648,18 +652,13 @@ header section {
   grid-template-columns: 20% 20% 20% 20% 20%;
   gap: 8px;
   grid-template-areas: "r1 r2 r3 r4 r5";
-  align-items: center;
-  justify-items: center;
-  padding-right: 16px;
+  align-items: right;
+  justify-items: right;
+  padding-right: 42px;
   filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
 }
 .nav-grid img {
-  width: 115%;
-}
-@media (min-width: 768px) {
-  .nav-grid img {
-    width: 150%;
-  }
+  width: 150%;
 }
 
 .r1 {
@@ -1839,7 +1838,7 @@ footer ul {
 
 .map-image {
   grid-area: map-image;
-  width: 80%;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .map-image {
