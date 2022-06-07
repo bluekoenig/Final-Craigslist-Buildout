@@ -7,6 +7,13 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+/* Hide Calendar Icon In Chrome */
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
 /* =============
     Variables
 ============= */
@@ -511,11 +518,11 @@ address {
   border: none;
   color: var(--white);
   border-radius: 40px;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
   .button li button {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -556,7 +563,6 @@ textarea {
 ============= */
 header {
   position: fixed;
-  width: 100%;
   bottom: 100;
   left: 0;
   padding-top: 8px;
@@ -575,7 +581,7 @@ header {
   }
 }
 header section {
-  width: 100%;
+  width: 90%;
 }
 @media (min-width: 768px) {
   header section h1 {
@@ -791,6 +797,7 @@ footer ul {
   margin-top: 24px;
   margin-left: 24px;
   margin-right: 24px;
+  padding-right: 8px;
   border: 8px solid var(--tulip);
   border-radius: 50px;
   box-sizing: border-box;
@@ -1277,6 +1284,92 @@ footer ul {
   }
 }
 
+#filters form ul {
+  display: grid;
+  grid-template-columns: 16px auto auto auto 16px;
+  grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 ." ". f7 f8 f9 ." ". f10 f11 f12 ." ". f13 f14 f15 ." ". f16 f17 f18 ." ". f19 f20 . .";
+}
+
+.f1 {
+  grid-area: f1;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.f4 {
+  grid-area: f4;
+}
+
+.f5 {
+  grid-area: f5;
+}
+
+.f6 {
+  grid-area: f6;
+}
+
+.f7 {
+  grid-area: f7;
+}
+
+.f8 {
+  grid-area: f8;
+}
+
+.f9 {
+  grid-area: f9;
+}
+
+.f10 {
+  grid-area: f10;
+}
+
+.f11 {
+  grid-area: f11;
+}
+
+.f12 {
+  grid-area: f12;
+}
+
+.f13 {
+  grid-area: f13;
+}
+
+.f14 {
+  grid-area: f14;
+}
+
+.f15 {
+  grid-area: f15;
+}
+
+.f16 {
+  grid-area: f16;
+}
+
+.f17 {
+  grid-area: f17;
+}
+
+.f18 {
+  grid-area: f18;
+}
+
+.f19 {
+  grid-area: f19;
+}
+
+.f20 {
+  grid-area: f20;
+}
+
 .featured h2 {
   margin-top: 124px;
   margin-left: 16px;
@@ -1316,6 +1409,7 @@ footer ul {
 }
 
 .button-hover button {
+  font-size: 0.875rem;
   cursor: pointer;
   transition: 0.25s;
 }
@@ -2182,10 +2276,12 @@ footer ul {
 }
 #nearby ul {
   align-content: center;
+  font-size: 0.875rem;
   padding-top: 16px;
   display: grid;
-  grid-template-columns: 16px auto auto auto 16px;
-  grid-template-areas: ". b1 b2 b3 . " ". b5 b5 b6 ." ". b4 b8 b8 ." ". b9 b9 b9 ." ". b10 b7 b7 .";
+  gap: 8px;
+  grid-template-columns: 16px auto auto 16px;
+  grid-template-areas: ". b1 b2 . " ". b3 b4 ." ". b5 b5 ." ". b6 b8 ." ". b7 b7 ." ". b9 b10 .";
 }
 @media (min-width: 768px) {
   #nearby ul {
@@ -2203,7 +2299,7 @@ footer ul {
 }
 #nearby button {
   width: 100%;
-  padding: 36px 24px 36px 24px;
+  padding: 24px 24px 24px 24px;
   margin: 8px;
 }
 
@@ -2346,7 +2442,7 @@ button {
   border-radius: 25px;
 }
 .pt-month form input {
-  padding: 8px 50% 8px 8px;
+  padding: 16px 60% 16px 8px;
   border-radius: 25px 0px 0px 25px;
   border-color: var(--tulip);
   border-style: solid;
@@ -2357,7 +2453,7 @@ button {
   color: var(--tulip);
   border: none;
   border-radius: 0px 25px 25px 0px;
-  padding: 8px 8px 8px 8px;
+  padding: 16px 16px 16px 16px;
 }
 
 .pt-grid {

@@ -29,6 +29,7 @@
         margin-top: 24px;
         margin-left: 24px;
         margin-right: 24px;
+        padding-right: 8px;
         border: 8px solid var(--tulip);
         border-radius: 50px;
         box-sizing: border-box;
@@ -520,4 +521,83 @@
        justify-content: center;
        align-items: flex-start;
     }
+}
+
+#filters{
+form{
+    ul{
+        display: grid;
+        grid-template-columns: 16px auto auto auto 16px;
+        grid-template-areas: 
+        ". f1 f2 f3 ."
+        ". f4 f5 f6 ."
+        ". f7 f8 f9 ."
+        ". f10 f11 f12 ."
+        ". f13 f14 f15 ."
+        ". f16 f17 f18 ."
+        ". f19 f20 . .";
+    }
+}
+   
+}
+
+.f1{
+    grid-area: f1;
+}
+.f2{
+    grid-area: f2;
+}
+.f3{
+    grid-area: f3;
+}
+.f4{
+    grid-area: f4;
+}
+.f5{
+    grid-area: f5;
+}
+.f6{
+    grid-area: f6;
+}
+.f7{
+    grid-area: f7;
+}
+.f8{
+    grid-area: f8;
+}
+.f9{
+    grid-area: f9;
+}
+.f10{
+    grid-area: f10;
+}
+.f11{
+    grid-area: f11;
+}
+.f12{
+    grid-area: f12;
+}
+.f13{
+    grid-area: f13;
+}
+.f14{
+    grid-area: f14;
+}
+.f15{
+    grid-area: f15;
+}
+.f16{
+    grid-area: f16;
+}
+.f17{
+    grid-area: f17;
+}
+.f18{
+    grid-area: f18;
+}
+.f19{
+    grid-area: f19;
+}
+.f20{
+    grid-area: f20;
 }

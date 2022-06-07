@@ -1,4 +1,39 @@
-#filters form {
-  display: flex;
-  justify-content: flex-end;
-}
+@charset 'utf-8';
+
+// Helpers Styles
+@import "helpers/_mixins";
+@import "helpers/_variables";
+
+// Base Styles
+@import "base/_normalize";
+@import "base/_base";
+@import "base/_typography";
+
+// Components Styles
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_navigation";
+
+// Layout Styles
+@import "layout/_header";
+@import "layout/_footer";
+
+// Sections Styles
+
+@import "sections/_search";
+@import "sections/_cpage";
+@import "sections/_details";
+@import "sections/_featured";
+@import "sections/_homec";
+@import "sections/_hero";
+@import "sections/_more";
+@import "sections/_nav";
+@import "sections/_nearby";
+@import "sections/_pagetop";
+@import "sections/_reimag";
+@import "sections/_suggested";
+@import "sections/_whatshap";
+
+
+
+

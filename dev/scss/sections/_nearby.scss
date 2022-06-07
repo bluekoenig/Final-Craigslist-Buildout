@@ -15,15 +15,18 @@
     }
 ul{
     align-content: center;
+    font-size: rem-calc(14);
     padding-top: 16px;
     display: grid;
-    grid-template-columns: 16px auto auto auto 16px;
+    gap: 8px;
+    grid-template-columns: 16px auto auto 16px;
     grid-template-areas: 
-    ". b1 b2 b3 . "
-    ". b5 b5 b6 ."
-    ". b4 b8 b8 ."
-    ". b9 b9 b9 ."
-    ". b10 b7 b7 .";
+    ". b1 b2 . "
+    ". b3 b4 ."
+    ". b5 b5 ."
+    ". b6 b8 ."
+    ". b7 b7 ."
+    ". b9 b10 .";
 
     @include md{
         grid-template-columns: 16px 10% auto auto auto 10% 16px;
@@ -49,7 +52,7 @@ ul{
 }
 button{
     width: 100%;
-    padding: 36px 24px 36px 24px;
+    padding: 24px 24px 24px 24px;
     margin: 8px;
        
     }

@@ -4,7 +4,6 @@
 header {
 
     position: fixed;
-    width: 100%;
     bottom: 100;
     left: 0;
   
@@ -37,7 +36,7 @@ header {
     }
 
     section {
-        width: 100%;
+        width: 90%;
         h1 {
 
             @include md {
