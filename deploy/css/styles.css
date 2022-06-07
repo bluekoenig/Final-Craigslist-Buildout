@@ -1373,9 +1373,20 @@ footer ul {
   }
 }
 .local-cal div ul button {
+  background-color: var(--punchy);
+  color: var(--white);
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.25s;
   border: none;
   border-radius: 50px;
   margin-bottom: 16px;
+}
+.local-cal div ul button:hover {
+  background-color: var(--blueberry);
+  color: var(--punchy);
+  border-radius: 50px;
 }
 @media (min-width: 1024px) {
   .local-cal div ul button {
@@ -1466,12 +1477,12 @@ footer ul {
   }
 }
 
-#hero {
+#hero .hero-img {
   width: 100%;
   height: 50vh;
   background-image: url("../images/gibson-hurst-fCk9KS__uGw-unsplash.png");
   background-size: cover;
-  background-position: center center;
+  background-position: top left;
 }
 
 .button-grid {
@@ -1828,7 +1839,7 @@ footer ul {
 
 .map-image {
   grid-area: map-image;
-  width: 100%;
+  width: 80%;
 }
 @media (min-width: 1024px) {
   .map-image {

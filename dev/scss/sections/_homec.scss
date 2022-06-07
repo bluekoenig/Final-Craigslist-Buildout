@@ -544,6 +544,20 @@
 
 
             button {
+                    background-color: var(--punchy);
+                    color: var(--white);
+                    border: none;
+            
+                    padding: 16px;
+                    cursor: pointer;
+                    transition: .25s;
+            
+                    &:hover {
+                        background-color: var(--blueberry);
+                        color: var(--punchy);
+                        border-radius: 50px;
+                    }
+            
                 border: none;
                 border-radius: 50px;
                 margin-bottom: 16px;
@@ -556,6 +570,7 @@
         }
 
     }
+}
 
 
 
@@ -572,7 +587,7 @@
     // }
 
 
-}
+
 
 .e1 {
     grid-area: e1;
