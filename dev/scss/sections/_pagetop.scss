@@ -1,0 +1,81 @@
+#page-top{
+    margin-top: 124px;
+
+    @include md{
+        margin-top: 0px;
+    }
+
+    h2{
+        text-align: center;
+        color: var(--deep-space);
+        font-size: rem-calc(36);
+    }
+}
+
+.pt-search{
+    grid-area: pt-search;
+    margin: 16px 24px 0px 24px ;
+
+   
+    form{
+        display: flex;
+        justify-content: flex-end;
+        border-color: var(--tulip);
+        border: 8px;
+        border-radius: 25px;
+        
+        input{
+            padding: 8px 40% 8px 8px;
+            border-radius: 25px 0px 0px 25px;
+            border-color: var(--tulip);
+            border-style: solid;
+        }   
+        }
+    }
+    button{
+        background-color: var(--eggplant);
+            color: var(--tulip);
+            border: none;
+            border-radius: 0px 25px 25px 0px;
+            padding: 8px 8px 8px 8px;
+
+    }
+.pt-month{
+    grid-area: pt-month;
+    margin: 16px 24px 16px 24px ;
+
+    form{
+        display: flex;
+        justify-content: flex-end;
+        border-color: var(--tulip);
+        border: 8px;
+        border-radius: 25px;
+        
+        input{
+            padding: 8px 50% 8px 8px;
+            border-radius: 25px 0px 0px 25px;
+            border-color: var(--tulip);
+            border-style: solid;
+        }   
+        }
+    }
+    button{
+        background-color: var(--eggplant);
+            color: var(--tulip);
+            border: none;
+            border-radius: 0px 25px 25px 0px;
+            padding: 8px 8px 8px 8px;
+
+    }
+
+    .pt-grid{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+        ". pt-search ."
+        ". pt-month .";
+
+     
+
+        margin: 36px 24px 16px 24px;
+    }

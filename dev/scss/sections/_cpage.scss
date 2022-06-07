@@ -1,0 +1,523 @@
+.cal-button2 {
+    ul {
+        li {
+            button {
+                background-color: var(--punchy);
+                color: var(--white);
+                padding: 16px 72px 16px 72px;
+
+                @include lg {
+                    padding: 16px 36px 16px 36px;
+                    font-size: rem-calc(14);
+                }
+            }
+
+        }
+    }
+
+}
+
+.mega-calendar2 {
+    grid-area: baby-calendar;
+    margin-top: 36px;
+    grid-area: mega-calendar;
+    font-size: rem-calc(18);
+
+
+    div {
+
+        margin-top: 24px;
+        margin-left: 24px;
+        margin-right: 24px;
+        border: 8px solid var(--tulip);
+        border-radius: 50px;
+        box-sizing: border-box;
+    }
+
+    @include md {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+
+    @include lg {
+        border: none;
+        margin: 0px;
+        margin-left: 24px;
+    }
+
+   
+
+
+
+
+    button {
+        background-color: var(--white);
+        color: var(--dark-gray);
+        border: none;
+
+        padding: 16px;
+        cursor: pointer;
+        transition: .25s;
+
+        &:hover {
+            background-color: var(--tulip);
+            color: var(--white);
+            border-radius: 50px;
+        }
+    }
+
+    ul {
+        text-align: center;
+        margin-top: 36px;
+        margin-bottom: 36px;
+        display: grid;
+        grid-template-columns: 12px 14% 14% 14% 14% 14% 14% 14% 12px;
+        grid-template-areas:
+            ". l-but .  month month month . r-but ."
+            ". sun mon tue wed thur fri sat ."
+            ". c1 c2 c3 c4 c5 c6 c7 ."
+            ". c8 c9 c10 c11 c12 c13 c14 ."
+            ". c15 c16 c17 c18 c19 c20 c21 ."
+            ". c22 c23 c24 c25 c26 c27 c28 ."
+            ". c29 c30 c31 . . . . .";
+
+        @include lg {
+            margin: 36px;
+            font-size: rem-calc(18);
+
+        }
+
+        // @include xxl {
+        //     padding: 24px 124px 24px 124px;
+        // }
+    }
+}
+
+
+
+
+
+
+
+
+.l-but {
+
+    grid-area: l-but;
+
+@include xxl{
+    margin-right: 72px;
+}
+
+}
+
+.r-but {
+
+    grid-area: r-but;
+    @include xxl{
+        margin-right: 72px;
+    }
+
+}
+
+.month {
+
+    grid-area: month;
+    font-size: rem-calc(24);
+
+    @include xxl{
+        margin: 0px 72px 0px 72px;
+    }
+
+}
+
+.sun {
+
+    grid-area: sun;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.mon {
+
+    grid-area: mon;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.tue {
+
+    grid-area: tue;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.wed {
+
+    grid-area: wed;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.thur {
+
+    grid-area: thur;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.fri {
+
+    grid-area: fri;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.sat {
+
+    grid-area: sat;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+.c1 {
+    grid-area: c1;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c2 {
+    grid-area: c2;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c3 {
+    grid-area: c3;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c4 {
+    grid-area: c4;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c5 {
+    grid-area: c5;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c6 {
+    grid-area: c6;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c7 {
+    grid-area: c7;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c8 {
+    grid-area: c8;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c9 {
+    grid-area: c9;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c10 {
+    grid-area: c10;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c11 {
+    grid-area: c11;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c12 {
+    grid-area: c12;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c13 {
+    grid-area: c13;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c14 {
+    grid-area: c14;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c15 {
+    grid-area: c15;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c16 {
+    grid-area: c16;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c17 {
+    grid-area: c17;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c18 {
+    grid-area: c18;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c19 {
+    grid-area: c19;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c20 {
+    grid-area: c20;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c21 {
+    grid-area: c21;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c22 {
+    grid-area: c22;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c23 {
+    grid-area: c23;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c24 {
+    grid-area: c24;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c25 {
+    grid-area: c25;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c26 {
+    grid-area: c26;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c27 {
+    grid-area: c27;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c28 {
+    grid-area: c28;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+.c29 {
+    grid-area: c29;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 24px;
+    }
+}
+
+.c30 {
+    grid-area: c30;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 24px;
+    }
+}
+
+.c31 {
+    grid-area: c31;
+
+    @include lg {
+        padding-top: 12px;
+        padding-bottom: 24px;
+    }
+}
+
+
+
+.headline-fixer2 {
+    margin-top: 124px;
+    text-align: center;
+    color: var(--eggplant);
+    font-size: rem-calc(36);
+
+    @include lg {
+        text-align: left;
+        margin-left: 10%;
+    }
+}
+
+#home-calendar2 {
+
+
+    @include md {
+        grid-template-columns: 16px 10% auto 10% 16px;
+        grid-template-areas:
+            ". . baby-calendar . .";
+    }
+
+    @include lg {
+        display: flex;
+        align-content: space-between;
+        justify-content: center;
+
+    }
+
+    @include xxl{
+       justify-content: center;
+       align-items: flex-start;
+    }
+}
