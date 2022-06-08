@@ -4,6 +4,10 @@
         color: var(--deep-space);
         font-size: rem-calc(36);
 
+        @include md{
+            margin: 72px 0px 36px 10%;
+        }
+
     }
 
     h5{
@@ -16,14 +20,25 @@
     
 #map{
     margin: 0px 16px 0px 16px;
+
+    @include md{
+        margin: 0px 10% 0px 10%;
+    }
 }
 
 .pink-but{
     display: grid;
-        grid-template-columns: 16px auto auto auto auto 16px;
+        grid-template-columns: 10% auto auto auto auto 10%;
         gap: 8px;
         grid-template-areas: 
-        ". t1 t2 t3 t4";
+        ". t1 t2 t3 t4 .";
+
+        @include md{
+grid-template-columns: 20% auto auto auto auto 20%;
+
+        }
+
+
     button{
         background-color: var(--wow-pink);
         color: var(--white);
@@ -72,6 +87,11 @@
 
 #descript{
     margin: 72px 16px 36px 16px;
+
+    @include md{
+        margin: 72px 10% 36px 10%;
+    }
+
     div{
         border: 5px solid var(--punchy);
 border-radius: 50px;

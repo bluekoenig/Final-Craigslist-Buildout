@@ -90,7 +90,7 @@ padding: 24px 0px 24px 0px;
     display: block;
     padding-left: 24px;
 
-    @include md {
+    @include lg {
         display: none;
     }
 }
@@ -99,7 +99,7 @@ padding: 24px 0px 24px 0px;
     display: none;
     padding-left: 24px;
 
-    @include md {
+    @include lg {
         display: block;
     }
 }

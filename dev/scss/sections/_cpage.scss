@@ -526,6 +526,17 @@
 #filters{
     margin-top: 24px;
     margin-bottom: 24px;
+
+    h4{
+margin-left: 10%;
+font-size: rem-calc(22);
+color: var(--poke);
+
+@include md{
+    margin-left: 20%;
+}
+    }
+
 form{
     ul{
         display: grid;
@@ -541,6 +552,10 @@ form{
         ". f19 f20 . .";
 
        justify-items: left;
+
+       @include md{
+           grid-template-columns: 20% auto auto auto 20%;
+       }
     }
 }
 

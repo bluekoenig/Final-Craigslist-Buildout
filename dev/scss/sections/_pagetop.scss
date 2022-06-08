@@ -1,14 +1,15 @@
 #page-top{
-    margin-top: 172px;
 
-    @include md{
-        margin-top: 0px;
-    }
 
     h2{
+        padding-top: 224px;
         text-align: center;
         color: var(--deep-space);
         font-size: rem-calc(48);
+
+        @include md{
+            padding-top: 24px;
+        }
     }
 }
 
@@ -29,7 +30,12 @@
             border-radius: 25px 0px 0px 25px;
             border-color: var(--tulip);
             border-style: solid;
+
+            @include md{
+                padding-right: 60%;
+            }
         }   
+
         }
     }
     button{
@@ -58,6 +64,10 @@
             border-color: var(--tulip);
             border-style: solid;
             color: var(--dark-gray);
+
+            @include md{
+                padding-right: 70%;
+            }
         }   
         }
     }
@@ -76,6 +86,7 @@
         grid-template-areas: 
         ". pt-search ."
         ". pt-month .";
+      
 
      
 

@@ -1,7 +1,10 @@
 #suggested {
+
     h2 {
         font-weight: 600;
         color: var(--very-purp);
+
+
     }
 
    p{
@@ -15,7 +18,11 @@
     background-color: var(--lavendar);
     border-radius: 50px;
     margin: 16px 16px 0px 16px;
-    padding: 24px 24px 8px 24px;
+    padding: 36px 24px 8px 24px;
+
+    @include md{
+        margin: 16px 10% 0px 10%;
+    }
 }
 
 .bolded {
@@ -53,7 +60,6 @@ h2{
 
 .v2{
     grid-area: v2;
-    width: fit-content;
     text-align: right;
     margin-bottom: 8px;
 }

@@ -617,7 +617,7 @@ header section {
   display: block;
   padding-left: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .logo {
     display: none;
   }
@@ -627,7 +627,7 @@ header section {
   display: none;
   padding-left: 24px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .words {
     display: block;
   }
@@ -1289,12 +1289,27 @@ footer ul {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+#filters h4 {
+  margin-left: 10%;
+  font-size: 1.375rem;
+  color: var(--poke);
+}
+@media (min-width: 768px) {
+  #filters h4 {
+    margin-left: 20%;
+  }
+}
 #filters form ul {
   display: grid;
   gap: 8px;
   grid-template-columns: 16px auto auto auto 16px;
   grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 ." ". f7 f8 f9 ." ". f10 f11 f12 ." ". f13 f14 f15 ." ". f16 f17 f18 ." ". f19 f20 . .";
   justify-items: left;
+}
+@media (min-width: 768px) {
+  #filters form ul {
+    grid-template-columns: 20% auto auto auto 20%;
+  }
 }
 #filters input[type=checkbox] {
   margin: 16px 0px 16px 0px;
@@ -1412,6 +1427,11 @@ footer ul {
   color: var(--deep-space);
   font-size: 2.25rem;
 }
+@media (min-width: 768px) {
+  #details h2 {
+    margin: 72px 0px 36px 10%;
+  }
+}
 #details h5 {
   margin: 8px 24px 16px 24px;
   text-align: center;
@@ -1422,12 +1442,22 @@ footer ul {
 #map {
   margin: 0px 16px 0px 16px;
 }
+@media (min-width: 768px) {
+  #map {
+    margin: 0px 10% 0px 10%;
+  }
+}
 
 .pink-but {
   display: grid;
-  grid-template-columns: 16px auto auto auto auto 16px;
+  grid-template-columns: 10% auto auto auto auto 10%;
   gap: 8px;
-  grid-template-areas: ". t1 t2 t3 t4";
+  grid-template-areas: ". t1 t2 t3 t4 .";
+}
+@media (min-width: 768px) {
+  .pink-but {
+    grid-template-columns: 20% auto auto auto auto 20%;
+  }
 }
 .pink-but button {
   background-color: var(--wow-pink);
@@ -1471,6 +1501,11 @@ footer ul {
 
 #descript {
   margin: 72px 16px 36px 16px;
+}
+@media (min-width: 768px) {
+  #descript {
+    margin: 72px 10% 36px 10%;
+  }
 }
 #descript div {
   border: 5px solid var(--punchy);
@@ -2546,18 +2581,16 @@ footer ul {
   width: 100%;
 }
 
-#page-top {
-  margin-top: 172px;
-}
-@media (min-width: 768px) {
-  #page-top {
-    margin-top: 0px;
-  }
-}
 #page-top h2 {
+  padding-top: 224px;
   text-align: center;
   color: var(--deep-space);
   font-size: 3rem;
+}
+@media (min-width: 768px) {
+  #page-top h2 {
+    padding-top: 24px;
+  }
 }
 
 .pt-search {
@@ -2576,6 +2609,11 @@ footer ul {
   border-radius: 25px 0px 0px 25px;
   border-color: var(--tulip);
   border-style: solid;
+}
+@media (min-width: 768px) {
+  .pt-search form input {
+    padding-right: 60%;
+  }
 }
 
 button {
@@ -2603,6 +2641,11 @@ button {
   border-color: var(--tulip);
   border-style: solid;
   color: var(--dark-gray);
+}
+@media (min-width: 768px) {
+  .pt-month form input {
+    padding-right: 70%;
+  }
 }
 
 button {
@@ -2692,7 +2735,12 @@ button {
   background-color: var(--lavendar);
   border-radius: 50px;
   margin: 16px 16px 0px 16px;
-  padding: 24px 24px 8px 24px;
+  padding: 36px 24px 8px 24px;
+}
+@media (min-width: 768px) {
+  .purp-back {
+    margin: 16px 10% 0px 10%;
+  }
 }
 
 .bolded h2 {
@@ -2722,7 +2770,6 @@ button {
 
 .v2 {
   grid-area: v2;
-  width: fit-content;
   text-align: right;
   margin-bottom: 8px;
 }
@@ -2766,6 +2813,11 @@ button {
   margin: 72px 0px 36px 24px;
   color: var(--deep-space);
   font-size: 2.25rem;
+}
+@media (min-width: 768px) {
+  #whats-happening h3 {
+    margin: 72px 0px 36px 10%;
+  }
 }
 #whats-happening form {
   color: var(--dark-gray);
@@ -2902,4 +2954,36 @@ button {
 .p2 {
   grid-area: p2;
   margin-right: 8px;
+}
+
+.pt-month {
+  grid-area: pt-month;
+  margin: 16px 8% 16px 24px;
+}
+.pt-month form {
+  display: flex;
+  justify-content: flex-end;
+  border-color: var(--tulip);
+  border: 8px;
+  border-radius: 25px;
+}
+.pt-month form input {
+  padding: 16px 60% 16px 8px;
+  border-radius: 25px 0px 0px 25px;
+  border-color: var(--tulip);
+  border-style: solid;
+  color: var(--dark-gray);
+}
+@media (min-width: 768px) {
+  .pt-month form input {
+    padding-right: 70%;
+  }
+}
+
+button {
+  background-color: var(--eggplant);
+  color: var(--tulip);
+  border: none;
+  border-radius: 0px 25px 25px 0px;
+  padding: 16px 16px 16px 16px;
 }

@@ -1,8 +1,14 @@
 #whats-happening{
+
+    
     h3{
         margin: 72px 0px 36px 24px;
         color: var(--deep-space);
         font-size: rem-calc(36);
+
+        @include md{
+            margin: 72px 0px 36px 10%;
+        }
 
     }
 
@@ -184,3 +190,37 @@
     grid-area: p2;
     margin-right: 8px;
 }
+
+.pt-month{
+    grid-area: pt-month;
+    margin: 16px 8% 16px 24px ;
+ 
+
+    form{
+        display: flex;
+        justify-content: flex-end;
+        border-color: var(--tulip);
+        border: 8px;
+        border-radius: 25px;
+        
+        input{
+            padding: 16px 60% 16px 8px;
+            border-radius: 25px 0px 0px 25px;
+            border-color: var(--tulip);
+            border-style: solid;
+            color: var(--dark-gray);
+
+            @include md{
+                padding-right: 70%;
+            }
+        }   
+        }
+    }
+    button{
+        background-color: var(--eggplant);
+            color: var(--tulip);
+            border: none;
+            border-radius: 0px 25px 25px 0px;
+            padding: 16px 16px 16px 16px;
+
+    }
