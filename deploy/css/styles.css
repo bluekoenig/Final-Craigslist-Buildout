@@ -31,6 +31,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
   --deep-space: #350659;
   --blueberry: #A6B1E1;
   --poke: #7B62CB;
+  --very-purp: #560A93;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1320,7 +1321,7 @@ footer ul {
   align-items: center;
   justify-content: center;
 }
-.big-flex h3 {
+.big-flex > h3 {
   font-size: 0.875rem;
   color: var(--eggplant);
   font-weight: 400;
@@ -1422,8 +1423,107 @@ footer ul {
   margin: 0px 16px 0px 16px;
 }
 
+.pink-but {
+  display: grid;
+  grid-template-columns: 16px auto auto auto auto 16px;
+  gap: 8px;
+  grid-template-areas: ". t1 t2 t3 t4";
+}
 .pink-but button {
   background-color: var(--wow-pink);
+  color: var(--white);
+  font-size: 0.75rem;
+  border-radius: 50px;
+  padding: 8px 16px 8px 16px;
+}
+
+.purp-but {
+  display: grid;
+  grid-template-columns: 36px auto auto 36px;
+  gap: 24px;
+  grid-template-areas: ". t1 t1 ." ". t2 t2 ." ". t3 t3 .";
+  margin-bottom: 72px;
+  margin-top: 24px;
+}
+.purp-but button {
+  background-color: var(--tulip);
+  border: none;
+  color: var(--white);
+  border-radius: 40px;
+  font-size: 1.125rem;
+}
+
+.t1 {
+  grid-area: t1;
+}
+
+.t2 {
+  grid-area: t2;
+}
+
+.t3 {
+  grid-area: t3;
+}
+
+.t4 {
+  grid-area: t4;
+}
+
+#descript {
+  margin: 72px 16px 36px 16px;
+}
+#descript div {
+  border: 5px solid var(--punchy);
+  border-radius: 50px;
+}
+#descript div h3 {
+  padding: 0;
+  margin: 24px 0px 36px 0px;
+  text-align: center;
+}
+#descript div p {
+  margin: 0px 24px 24px 24px;
+  line-height: 175%;
+  color: var(--eggplant);
+}
+#descript div h4 {
+  color: var(--punchy);
+}
+#descript div h6 {
+  color: var(--eggplant);
+}
+
+.organ {
+  justify-items: top;
+  align-items: top;
+  display: grid;
+  grid-template-columns: 24px 20% 60% 24px;
+  grid-template-areas: ". l1 r1 ." ". l2 r2 .";
+}
+.organ p {
+  grid-template-columns: fit-content 100%;
+}
+
+.l1 {
+  grid-area: l1;
+  padding-top: 10px;
+}
+
+.l2 {
+  grid-area: l2;
+  padding-top: 4px;
+}
+
+.r1 {
+  grid-area: r1;
+  width: fit-content;
+}
+
+.r2 {
+  grid-area: r2;
+  margin: 0px;
+  padding: 0;
+  width: fit-content;
 }
 
 .featured h2 {
@@ -2447,7 +2547,7 @@ footer ul {
 }
 
 #page-top {
-  margin-top: 124px;
+  margin-top: 172px;
 }
 @media (min-width: 768px) {
   #page-top {
@@ -2578,6 +2678,11 @@ button {
   .map-image {
     width: fit-content;
   }
+}
+
+#suggested h2 {
+  font-weight: 400;
+  color: var(--very-purp);
 }
 
 #whats-happening h3 {
