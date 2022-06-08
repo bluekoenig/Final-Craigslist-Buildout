@@ -27,10 +27,18 @@
 #search-header{
     form{
         input{
-            margin-left: -30%;
-            padding: 8px 30% 8px 8px;
+            margin-left: 20%;
+            padding: 4px 24px 4px 8px;
             border: none;
             border-radius: 25px 0px 0px 25px;
+
+            @include md{
+                margin-left: 30%;
+                padding: 8px 30% 8px 8px;
+                border: none;
+                border-radius: 25px 0px 0px 25px;
+    
+            }
         }
     }
     button{

@@ -615,7 +615,7 @@ header section {
 
 .logo {
   display: block;
-  padding-left: 24px;
+  padding-left: 16px;
 }
 @media (min-width: 1024px) {
   .logo {
@@ -625,7 +625,7 @@ header section {
 
 .words {
   display: none;
-  padding-left: 24px;
+  padding-left: 16px;
 }
 @media (min-width: 1024px) {
   .words {
@@ -658,11 +658,19 @@ header section {
   display: grid;
   grid-template-columns: 16px 15% 15% 15% 15% 15% 16px;
   gap: 16px;
+  align-items: center;
+  justify-items: center;
+  margin-right: 20%;
   grid-template-areas: ". r1 r2 r3 r4 r5 .";
-  align-items: right;
-  justify-items: right;
-  padding-right: 42px;
   filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
+}
+@media (min-width: 768px) {
+  .nav-grid {
+    align-items: right;
+    justify-items: right;
+    padding-right: 42px;
+    gap: 24px;
+  }
 }
 .nav-grid img {
   width: 6vw;
@@ -773,10 +781,18 @@ footer ul {
 }
 
 #search-header form input {
-  margin-left: -30%;
-  padding: 8px 30% 8px 8px;
+  margin-left: 20%;
+  padding: 4px 24px 4px 8px;
   border: none;
   border-radius: 25px 0px 0px 25px;
+}
+@media (min-width: 768px) {
+  #search-header form input {
+    margin-left: 30%;
+    padding: 8px 30% 8px 8px;
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+  }
 }
 #search-header button {
   background-color: var(--eggplant);
@@ -1765,9 +1781,14 @@ footer ul {
   background-color: var(--white);
   color: var(--dark-gray);
   border: none;
-  padding: 16px;
+  padding: 8px;
   cursor: pointer;
   transition: 0.25s;
+}
+@media (min-width: 768px) {
+  .mega-calendar button {
+    padding: 16px;
+  }
 }
 .mega-calendar button:hover {
   background-color: var(--tulip);
@@ -1779,7 +1800,7 @@ footer ul {
   margin-top: 36px;
   margin-bottom: 36px;
   display: grid;
-  grid-template-columns: 12px 14% 14% 14% 14% 14% 14% 14% 12px;
+  grid-template-columns: 8px 14% 14% 14% 14% 14% 14% 14% 8px;
   grid-template-areas: ". l-but .  month month month . r-but ." ". sun mon tue wed thur fri sat ." ". c1 c2 c3 c4 c5 c6 c7 ." ". c8 c9 c10 c11 c12 c13 c14 ." ". c15 c16 c17 c18 c19 c20 c21 ." ". c22 c23 c24 c25 c26 c27 c28 ." ". c29 c30 c31 . . . . .";
 }
 @media (min-width: 1024px) {
@@ -2228,7 +2249,7 @@ footer ul {
 }
 .local-cal div ul li {
   display: grid;
-  grid-template-columns: 16px 50% 16px 40% 16px;
+  grid-template-columns: 8px 50% 8px 40% 8px;
   grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
 }
 @media (min-width: 768px) {
