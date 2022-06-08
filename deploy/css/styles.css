@@ -2644,7 +2644,7 @@ button {
 }
 @media (min-width: 768px) {
   .pt-month form input {
-    padding-right: 70%;
+    padding-right: 72%;
   }
 }
 
@@ -2959,18 +2959,18 @@ button {
   margin-right: 8px;
 }
 
-.pt-month {
+.pt-month2 {
   grid-area: pt-month;
   margin: 16px 8% 16px 24px;
 }
-.pt-month form {
+.pt-month2 form {
   display: flex;
   justify-content: flex-end;
   border-color: var(--tulip);
   border: 8px;
   border-radius: 25px;
 }
-.pt-month form input {
+.pt-month2 form input {
   padding: 16px 60% 16px 8px;
   border-radius: 25px 0px 0px 25px;
   border-color: var(--tulip);
@@ -2978,7 +2978,7 @@ button {
   color: var(--dark-gray);
 }
 @media (min-width: 768px) {
-  .pt-month form input {
+  .pt-month2 form input {
     padding-right: 70%;
   }
 }

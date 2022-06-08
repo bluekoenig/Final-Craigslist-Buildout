@@ -66,7 +66,7 @@
             color: var(--dark-gray);
 
             @include md{
-                padding-right: 70%;
+                padding-right: 72%;
             }
         }   
         }
@@ -86,8 +86,6 @@
         grid-template-areas: 
         ". pt-search ."
         ". pt-month .";
-      
-
      
 
         margin: 36px 24px 16px 24px;
