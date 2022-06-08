@@ -128,32 +128,55 @@
 .e1 {
     grid-area: e1;
     margin-right: 8px;
-    text-align: left;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e2 {
     grid-area: e2;
     margin-right: 8px;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e3 {
     grid-area: e3;
     margin-right: 8px;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e4 {
     grid-area: e4;
     margin-right: 8px;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e5 {
     grid-area: e5;
     margin-right: 8px;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e6 {
     grid-area: e6;
     margin-right: 8px;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .n1 {

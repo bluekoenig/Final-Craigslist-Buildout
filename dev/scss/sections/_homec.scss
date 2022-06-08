@@ -504,7 +504,7 @@
         justify-items: center;
         align-items: center;
         color: var(--deep-iris);
-        text-align: center;
+        text-align: left;
         font-size: rem-calc(18);
 
         @include md {
@@ -595,27 +595,50 @@
 
 .e1 {
     grid-area: e1;
-    text-align: center;
+    
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e2 {
     grid-area: e2;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e3 {
     grid-area: e3;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e4 {
     grid-area: e4;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e5 {
     grid-area: e5;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .e6 {
     grid-area: e6;
+
+    @include xxl{
+        text-align: center;
+    }
 }
 
 .n1 {

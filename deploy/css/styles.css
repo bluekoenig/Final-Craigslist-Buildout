@@ -380,6 +380,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  width: 100%;
+}
+
 .show-menu {
   display: block !important;
 }
@@ -1478,12 +1482,11 @@ footer ul {
     grid-template-columns: 16px 20% 36px 70% 16px;
     grid-template-areas: ". filt move-cal ." ". filt move-cal .";
   }
-}
-
-@media (min-width: 1024px) {
-  .crazy-cal2 {
-    display: flex;
-    justify-content: flex-start;
+  .crazy-cal1 .filt {
+    grid-area: filt;
+  }
+  .crazy-cal1 .move-cal {
+    grid-area: move-cal;
   }
 }
 
@@ -2234,7 +2237,7 @@ footer ul {
   justify-items: center;
   align-items: center;
   color: var(--deep-iris);
-  text-align: center;
+  text-align: left;
   font-size: 1.125rem;
 }
 @media (min-width: 768px) {
@@ -2287,27 +2290,56 @@ footer ul {
 
 .e1 {
   grid-area: e1;
-  text-align: center;
+}
+@media (min-width: 1440px) {
+  .e1 {
+    text-align: center;
+  }
 }
 
 .e2 {
   grid-area: e2;
 }
+@media (min-width: 1440px) {
+  .e2 {
+    text-align: center;
+  }
+}
 
 .e3 {
   grid-area: e3;
+}
+@media (min-width: 1440px) {
+  .e3 {
+    text-align: center;
+  }
 }
 
 .e4 {
   grid-area: e4;
 }
+@media (min-width: 1440px) {
+  .e4 {
+    text-align: center;
+  }
+}
 
 .e5 {
   grid-area: e5;
 }
+@media (min-width: 1440px) {
+  .e5 {
+    text-align: center;
+  }
+}
 
 .e6 {
   grid-area: e6;
+}
+@media (min-width: 1440px) {
+  .e6 {
+    text-align: center;
+  }
 }
 
 .n1 {
@@ -3061,32 +3093,61 @@ button {
 .e1 {
   grid-area: e1;
   margin-right: 8px;
-  text-align: left;
+}
+@media (min-width: 1440px) {
+  .e1 {
+    text-align: center;
+  }
 }
 
 .e2 {
   grid-area: e2;
   margin-right: 8px;
 }
+@media (min-width: 1440px) {
+  .e2 {
+    text-align: center;
+  }
+}
 
 .e3 {
   grid-area: e3;
   margin-right: 8px;
+}
+@media (min-width: 1440px) {
+  .e3 {
+    text-align: center;
+  }
 }
 
 .e4 {
   grid-area: e4;
   margin-right: 8px;
 }
+@media (min-width: 1440px) {
+  .e4 {
+    text-align: center;
+  }
+}
 
 .e5 {
   grid-area: e5;
   margin-right: 8px;
 }
+@media (min-width: 1440px) {
+  .e5 {
+    text-align: center;
+  }
+}
 
 .e6 {
   grid-area: e6;
   margin-right: 8px;
+}
+@media (min-width: 1440px) {
+  .e6 {
+    text-align: center;
+  }
 }
 
 .n1 {

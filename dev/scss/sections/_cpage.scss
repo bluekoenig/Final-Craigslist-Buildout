@@ -710,13 +710,14 @@ border-color: var(--blueberry);
         grid-template-areas: 
         ". filt move-cal ."
         ". filt move-cal .";
-    }
-   
-}
-.crazy-cal2{
-    @include lg{
-        display: flex;
-        justify-content: flex-start;
+
+        .filt{
+            grid-area: filt;
+        }
+
+        .move-cal{
+            grid-area: move-cal;
+        }
     }
    
 }
