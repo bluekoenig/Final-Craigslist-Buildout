@@ -18,11 +18,11 @@
 }
 
 .mega-calendar2 {
-    grid-area: baby-calendar;
+    grid-area: baby-calendar2;
     margin-top: 36px;
-    grid-area: mega-calendar;
+    grid-area: mega-calendar2;
     font-size: rem-calc(18);
-
+   
 
     div {
 
@@ -45,10 +45,6 @@
         margin: 0px;
         margin-left: 24px;
     }
-
-   
-
-
 
 
     button {
@@ -93,6 +89,7 @@
         // }
     }
 }
+    
 
 
 
@@ -511,9 +508,7 @@
     }
 
     @include lg {
-        display: flex;
-        align-content: space-between;
-        justify-content: center;
+        display: grid;
 
     }
 
@@ -524,6 +519,7 @@
 }
 
 #filters{
+    grid-area: filt;
     margin-top: 24px;
     margin-bottom: 24px;
 
@@ -535,12 +531,18 @@ color: var(--poke);
 @include md{
     margin-left: 20%;
 }
+@include lg{
+    margin-bottom: 8px;
+}
+
+
     }
 
 form{
+    
     ul{
+        
         display: grid;
-        gap: 8px;
         grid-template-columns: 16px auto auto auto 16px;
         grid-template-areas: 
         ". f1 f2 f3 ."
@@ -556,6 +558,35 @@ form{
        @include md{
            grid-template-columns: 20% auto auto auto 20%;
        }
+
+       @include lg{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: 
+        ". f1 ."
+        ". f2 ."
+        ". f3 ."
+        ". f4 ."
+        ". f5 ."
+        ". f6 ."
+        ". f7 ."
+        ". f8 ."
+        ". f9 ."
+        ". f10 ."
+        ". f11 ."
+        ". f12 ."
+        ". f13 ."
+        ". f14 ."
+        ". f15 ."
+        ". f16 ."
+        ". f17 ."
+        ". f18 ."
+        ". f19 ."
+        ". f20 .";
+        
+
+       justify-items: left;
+       }
     }
 }
 
@@ -565,6 +596,11 @@ input[type=checkbox]{
     height: 36px;
   width: 36px;
 border-color: var(--blueberry);
+
+@include lg{
+    height: 16px;
+    width: 16px;
+}
 }
    
 }
@@ -660,4 +696,23 @@ border-color: var(--blueberry);
 }
 .f20{
     grid-area: f20;
+}
+
+.crazy-cal1{
+    @include lg{
+        margin: 16px 16px 16px 16px;
+        display: grid;
+        grid-template-columns: 16px 20% 36px 70% 16px;
+        grid-template-areas: 
+        ". filt move-cal ."
+        ". filt move-cal .";
+    }
+   
+}
+.crazy-cal2{
+    @include lg{
+        display: flex;
+        justify-content: flex-start;
+    }
+   
 }

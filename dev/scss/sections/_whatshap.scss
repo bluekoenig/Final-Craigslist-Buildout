@@ -17,9 +17,9 @@
     }
 }
 
-.local-cal {
+.local-cal2 {
     div {
-        grid-area: local-cal;
+        grid-area: local-cal2;
         margin: 36px 16px 72px 16px;
         padding: 16px 0px 16px 16px;
         background-color: var(--lavendar);
@@ -44,7 +44,7 @@
         }
 
         @include lg {
-            margin: 24px 16px 24px 16px;
+            margin: 24px 10% 24px 10%;
             padding-right: 16px;
         }
 
@@ -195,6 +195,9 @@
     grid-area: pt-month;
     margin: 16px 8% 16px 24px ;
  
+@include lg{
+    margin-right: 12%;
+}
 
     form{
         display: flex;
@@ -211,6 +214,10 @@
             color: var(--dark-gray);
 
             @include md{
+                padding-right: 70%;
+            }
+
+            @include lg{
                 padding-right: 70%;
             }
         }   

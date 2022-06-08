@@ -657,7 +657,7 @@ header section {
 .nav-grid {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
-  gap: 8px;
+  gap: 16px;
   grid-template-areas: "r1 r2 r3 r4 r5";
   align-items: right;
   justify-items: right;
@@ -789,9 +789,9 @@ footer ul {
 }
 
 .mega-calendar2 {
-  grid-area: baby-calendar;
+  grid-area: baby-calendar2;
   margin-top: 36px;
-  grid-area: mega-calendar;
+  grid-area: mega-calendar2;
   font-size: 1.125rem;
 }
 .mega-calendar2 div {
@@ -1273,9 +1273,7 @@ footer ul {
 }
 @media (min-width: 1024px) {
   #home-calendar2 {
-    display: flex;
-    align-content: space-between;
-    justify-content: center;
+    display: grid;
   }
 }
 @media (min-width: 1440px) {
@@ -1286,6 +1284,7 @@ footer ul {
 }
 
 #filters {
+  grid-area: filt;
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -1299,9 +1298,13 @@ footer ul {
     margin-left: 20%;
   }
 }
+@media (min-width: 1024px) {
+  #filters h4 {
+    margin-bottom: 8px;
+  }
+}
 #filters form ul {
   display: grid;
-  gap: 8px;
   grid-template-columns: 16px auto auto auto 16px;
   grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 ." ". f7 f8 f9 ." ". f10 f11 f12 ." ". f13 f14 f15 ." ". f16 f17 f18 ." ". f19 f20 . .";
   justify-items: left;
@@ -1311,12 +1314,26 @@ footer ul {
     grid-template-columns: 20% auto auto auto 20%;
   }
 }
+@media (min-width: 1024px) {
+  #filters form ul {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". f1 ." ". f2 ." ". f3 ." ". f4 ." ". f5 ." ". f6 ." ". f7 ." ". f8 ." ". f9 ." ". f10 ." ". f11 ." ". f12 ." ". f13 ." ". f14 ." ". f15 ." ". f16 ." ". f17 ." ". f18 ." ". f19 ." ". f20 .";
+    justify-items: left;
+  }
+}
 #filters input[type=checkbox] {
   margin: 16px 0px 16px 0px;
   background-color: var(--blueberry);
   height: 36px;
   width: 36px;
   border-color: var(--blueberry);
+}
+@media (min-width: 1024px) {
+  #filters input[type=checkbox] {
+    height: 16px;
+    width: 16px;
+  }
 }
 
 .style-box div {
@@ -1422,7 +1439,24 @@ footer ul {
   grid-area: f20;
 }
 
+@media (min-width: 1024px) {
+  .crazy-cal1 {
+    margin: 16px 16px 16px 16px;
+    display: grid;
+    grid-template-columns: 16px 20% 36px 70% 16px;
+    grid-template-areas: ". filt move-cal ." ". filt move-cal .";
+  }
+}
+
+@media (min-width: 1024px) {
+  .crazy-cal2 {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
 #details h2 {
+  grid-area: head;
   margin: 72px 0px 36px 24px;
   color: var(--deep-space);
   font-size: 2.25rem;
@@ -1438,6 +1472,16 @@ footer ul {
   color: var(--poke);
   font-weight: 200;
 }
+@media (min-width: 1024px) {
+  #details {
+    margin: 48px 16px 48px 8%;
+    display: grid;
+    grid-template-columns: 16px 40% 50% 16px;
+    grid-template-areas: ". head . ." ". description map ." ". description map ." ". description . ." ". description . .";
+    width: fit-content;
+    height: fit-content;
+  }
+}
 
 #map {
   margin: 0px 16px 0px 16px;
@@ -1445,6 +1489,11 @@ footer ul {
 @media (min-width: 768px) {
   #map {
     margin: 0px 10% 0px 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #map {
+    margin: 0;
   }
 }
 
@@ -1507,6 +1556,11 @@ footer ul {
     margin: 72px 10% 36px 10%;
   }
 }
+@media (min-width: 1024px) {
+  #descript {
+    margin: 0px 24px 0px 24px;
+  }
+}
 #descript div {
   border: 5px solid var(--punchy);
   border-radius: 50px;
@@ -1559,6 +1613,14 @@ footer ul {
   margin: 0px;
   padding: 0;
   width: fit-content;
+}
+
+.map {
+  grid-area: map;
+}
+
+.description {
+  grid-area: description;
 }
 
 .featured h2 {
@@ -2615,6 +2677,11 @@ footer ul {
     padding-right: 60%;
   }
 }
+@media (min-width: 1024px) {
+  .pt-search form input {
+    padding-right: 70%;
+  }
+}
 
 button {
   background-color: var(--eggplant);
@@ -2647,6 +2714,11 @@ button {
     padding-right: 72%;
   }
 }
+@media (min-width: 1024px) {
+  .pt-month form input {
+    padding-right: 78%;
+  }
+}
 
 button {
   background-color: var(--eggplant);
@@ -2661,6 +2733,23 @@ button {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". pt-search ." ". pt-month .";
   margin: 36px 24px 16px 24px;
+}
+@media (min-width: 1024px) {
+  .pt-grid {
+    margin: 8px 24px 16px 24px;
+  }
+}
+
+.dis-larg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .dis-larg {
+    display: block;
+    margin: 48px 0px 0px 10%;
+    color: var(--deep-iris);
+    font-size: 1.5rem;
+  }
 }
 
 .reimagined {
@@ -2727,8 +2816,14 @@ button {
   font-weight: 600;
   color: var(--very-purp);
 }
+@media (min-width: 1024px) {
+  #suggested h2 {
+    font-size: 1.75rem;
+  }
+}
 #suggested p {
   color: var(--deep-space);
+  font-size: 1.125rem;
 }
 
 .purp-back {
@@ -2826,8 +2921,8 @@ button {
   color: var(--dark-gray);
 }
 
-.local-cal div {
-  grid-area: local-cal;
+.local-cal2 div {
+  grid-area: local-cal2;
   margin: 36px 16px 72px 16px;
   padding: 16px 0px 16px 16px;
   background-color: var(--lavendar);
@@ -2839,39 +2934,39 @@ button {
   text-align: left;
   font-size: 1.125rem;
 }
-.local-cal div h4 {
+.local-cal2 div h4 {
   font-weight: 500;
 }
-.local-cal div button {
+.local-cal2 div button {
   font-size: 0.875rem;
 }
 @media (min-width: 768px) {
-  .local-cal div {
+  .local-cal2 div {
     margin: 24px 56px 0px 56px;
   }
 }
 @media (min-width: 1024px) {
-  .local-cal div {
-    margin: 24px 16px 24px 16px;
+  .local-cal2 div {
+    margin: 24px 10% 24px 10%;
     padding-right: 16px;
   }
 }
 @media (min-width: 1440px) {
-  .local-cal div {
+  .local-cal2 div {
     padding: 24px 124px 24px 124px;
   }
 }
-.local-cal div ul li {
+.local-cal2 div ul li {
   display: grid;
   grid-template-columns: 16px 40% 16px auto auto 16px;
   grid-template-areas: ". e1 . . n1 ." ". e2 . . n2 ." ". e3 . p1 n3 ." ". e4 . . n4 ." ". e5 . . n5 ." ". e6 . p2 n6 .";
 }
 @media (min-width: 768px) {
-  .local-cal div ul li {
+  .local-cal2 div ul li {
     margin-top: 24px;
   }
 }
-.local-cal div ul button {
+.local-cal2 div ul button {
   background-color: var(--punchy);
   color: var(--white);
   border: none;
@@ -2882,13 +2977,13 @@ button {
   border-radius: 50px;
   margin-bottom: 16px;
 }
-.local-cal div ul button:hover {
+.local-cal2 div ul button:hover {
   background-color: var(--blueberry);
   color: var(--punchy);
   border-radius: 50px;
 }
 @media (min-width: 1024px) {
-  .local-cal div ul button {
+  .local-cal2 div ul button {
     margin-bottom: 18px;
   }
 }
@@ -2963,6 +3058,11 @@ button {
   grid-area: pt-month;
   margin: 16px 8% 16px 24px;
 }
+@media (min-width: 1024px) {
+  .pt-month2 {
+    margin-right: 12%;
+  }
+}
 .pt-month2 form {
   display: flex;
   justify-content: flex-end;
@@ -2978,6 +3078,11 @@ button {
   color: var(--dark-gray);
 }
 @media (min-width: 768px) {
+  .pt-month2 form input {
+    padding-right: 70%;
+  }
+}
+@media (min-width: 1024px) {
   .pt-month2 form input {
     padding-right: 70%;
   }

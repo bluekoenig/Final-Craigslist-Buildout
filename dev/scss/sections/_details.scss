@@ -1,5 +1,6 @@
 #details{
     h2{
+        grid-area: head;
         margin: 72px 0px 36px 24px;
         color: var(--deep-space);
         font-size: rem-calc(36);
@@ -16,6 +17,21 @@
    color: var(--poke);
    font-weight: 200;
     }
+
+    @include lg{
+        margin: 48px 16px 48px 8% ;
+        display: grid;
+        grid-template-columns: 16px 40% 50% 16px;
+        grid-template-areas: 
+        ". head . ."
+        ". description map ."
+        ". description map ."
+        ". description . ."
+        ". description . .";
+
+        width: fit-content;
+        height: fit-content;
+    }
 }
     
 #map{
@@ -23,6 +39,10 @@
 
     @include md{
         margin: 0px 10% 0px 10%;
+    }
+
+    @include lg{
+        margin: 0;
     }
 }
 
@@ -92,6 +112,10 @@ grid-template-columns: 20% auto auto auto auto 20%;
         margin: 72px 10% 36px 10%;
     }
 
+    @include lg{
+        margin: 0px 24px 0px 24px;
+    }
+
     div{
         border: 5px solid var(--punchy);
 border-radius: 50px;
@@ -154,4 +178,12 @@ border-radius: 50px;
     margin: 0px;
     padding: 0;
     width: fit-content;
+}
+
+.map{
+    grid-area: map;
+}
+
+.description{
+    grid-area: description;
 }

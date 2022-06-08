@@ -34,6 +34,10 @@
             @include md{
                 padding-right: 60%;
             }
+
+            @include lg{
+                padding-right: 70%;
+            }
         }   
 
         }
@@ -68,6 +72,10 @@
             @include md{
                 padding-right: 72%;
             }
+
+            @include lg{
+                padding-right: 78%;
+            }
         }   
         }
     }
@@ -89,4 +97,21 @@
      
 
         margin: 36px 24px 16px 24px;
+
+        @include lg{
+            margin: 8px 24px 16px 24px; 
+        }
+    }
+
+
+    .dis-larg{
+        display: none;
+
+        @include lg{
+            display: block;
+
+            margin: 48px 0px 0px 10%;
+            color: var(--deep-iris);
+            font-size: rem-calc(24);
+        }
     }
