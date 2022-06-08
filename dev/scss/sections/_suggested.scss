@@ -1,7 +1,88 @@
-#suggested{
-    
-    h2{
-        font-weight: 400;
+#suggested {
+    h2 {
+        font-weight: 600;
         color: var(--very-purp);
     }
+
+   p{
+       color: var(--deep-space);
+   }
+
+   
+}
+
+.purp-back {
+    background-color: var(--lavendar);
+    border-radius: 50px;
+    margin: 16px 16px 0px 16px;
+    padding: 24px 24px 8px 24px;
+}
+
+.bolded {
+h2{
+    font-weight: 400;
+}
+    
+}
+
+.bootie{
+        background-color: var(--tulip);
+            border: none;
+            color: var(--white);
+            border-radius: 40px;
+            font-size: rem-calc(18);
+       
+    }
+
+
+.sug-grid{
+    margin-bottom: 36px;
+    display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   grid-template-areas: 
+   "v1 v1 v2 v2"
+   "v3 v4 v5 v5 "
+   "v6 v6 . v7";
+}
+
+.v1{
+    grid-area: v1;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+
+.v2{
+    grid-area: v2;
+    width: fit-content;
+    text-align: right;
+    margin-bottom: 8px;
+}
+.v3{
+    grid-area: v3;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.v4{
+    grid-area: v4;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.v5{
+    grid-area: v5;
+    width: fit-content;
+    margin-bottom: 8px;
+}
+.v6{
+    grid-area: v6;
+    height: 4vh;
+    margin-bottom: 8px;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.v7{
+    grid-area: v7;
+    margin-bottom: 8px;
+}
+.v8{
+    grid-area: v8;
 }
