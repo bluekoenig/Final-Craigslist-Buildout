@@ -1284,10 +1284,46 @@ footer ul {
   }
 }
 
+#filters {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 #filters form ul {
   display: grid;
+  gap: 8px;
   grid-template-columns: 16px auto auto auto 16px;
   grid-template-areas: ". f1 f2 f3 ." ". f4 f5 f6 ." ". f7 f8 f9 ." ". f10 f11 f12 ." ". f13 f14 f15 ." ". f16 f17 f18 ." ". f19 f20 . .";
+  justify-items: left;
+}
+#filters input[type=checkbox] {
+  margin: 16px 0px 16px 0px;
+  background-color: var(--blueberry);
+  height: 36px;
+  width: 36px;
+  border-color: var(--blueberry);
+}
+
+.style-box div {
+  border-radius: 5px;
+  width: 36px;
+  height: 36px;
+}
+
+.fancy li input {
+  align-items: center;
+  justify-content: center;
+}
+
+.big-flex {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.big-flex h3 {
+  font-size: 0.875rem;
+  color: var(--eggplant);
+  font-weight: 400;
 }
 
 .f1 {
@@ -1368,6 +1404,26 @@ footer ul {
 
 .f20 {
   grid-area: f20;
+}
+
+#details h2 {
+  margin: 72px 0px 36px 24px;
+  color: var(--deep-space);
+  font-size: 2.25rem;
+}
+#details h5 {
+  margin: 8px 24px 16px 24px;
+  text-align: center;
+  color: var(--poke);
+  font-weight: 200;
+}
+
+#map {
+  margin: 0px 16px 0px 16px;
+}
+
+.pink-but button {
+  background-color: var(--wow-pink);
 }
 
 .featured h2 {
@@ -2401,7 +2457,7 @@ footer ul {
 #page-top h2 {
   text-align: center;
   color: var(--deep-space);
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 .pt-search {
@@ -2446,6 +2502,7 @@ button {
   border-radius: 25px 0px 0px 25px;
   border-color: var(--tulip);
   border-style: solid;
+  color: var(--dark-gray);
 }
 
 button {
@@ -2523,9 +2580,18 @@ button {
   }
 }
 
+#whats-happening h3 {
+  margin: 72px 0px 36px 24px;
+  color: var(--deep-space);
+  font-size: 2.25rem;
+}
+#whats-happening form {
+  color: var(--dark-gray);
+}
+
 .local-cal div {
   grid-area: local-cal;
-  margin: 16px 16px 0px 16px;
+  margin: 36px 16px 72px 16px;
   padding: 16px 0px 16px 16px;
   background-color: var(--lavendar);
   border-radius: 50px;
@@ -2533,8 +2599,14 @@ button {
   justify-items: center;
   align-items: center;
   color: var(--deep-iris);
-  text-align: center;
+  text-align: left;
   font-size: 1.125rem;
+}
+.local-cal div h4 {
+  font-weight: 500;
+}
+.local-cal div button {
+  font-size: 0.875rem;
 }
 @media (min-width: 768px) {
   .local-cal div {
@@ -2554,8 +2626,8 @@ button {
 }
 .local-cal div ul li {
   display: grid;
-  grid-template-columns: 16px 50% 16px 40% 16px;
-  grid-template-areas: ". e1 . n1 ." ". e2 . n2 ." ". e3 . n3 ." ". e4 . n4 ." ". e5 . n5 ." ". e6 . n6 .";
+  grid-template-columns: 16px 40% 16px auto auto 16px;
+  grid-template-areas: ". e1 . . n1 ." ". e2 . . n2 ." ". e3 . p1 n3 ." ". e4 . . n4 ." ". e5 . . n5 ." ". e6 . p2 n6 .";
 }
 @media (min-width: 768px) {
   .local-cal div ul li {
@@ -2586,27 +2658,33 @@ button {
 
 .e1 {
   grid-area: e1;
-  text-align: center;
+  margin-right: 8px;
+  text-align: left;
 }
 
 .e2 {
   grid-area: e2;
+  margin-right: 8px;
 }
 
 .e3 {
   grid-area: e3;
+  margin-right: 8px;
 }
 
 .e4 {
   grid-area: e4;
+  margin-right: 8px;
 }
 
 .e5 {
   grid-area: e5;
+  margin-right: 8px;
 }
 
 .e6 {
   grid-area: e6;
+  margin-right: 8px;
 }
 
 .n1 {
@@ -2632,4 +2710,14 @@ button {
 
 .n6 {
   grid-area: n6;
+}
+
+.p1 {
+  grid-area: p1;
+  margin-right: 8px;
+}
+
+.p2 {
+  grid-area: p2;
+  margin-right: 8px;
 }

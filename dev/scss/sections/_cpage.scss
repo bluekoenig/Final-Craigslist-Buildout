@@ -524,9 +524,12 @@
 }
 
 #filters{
+    margin-top: 24px;
+    margin-bottom: 24px;
 form{
     ul{
         display: grid;
+        gap: 8px;
         grid-template-columns: 16px auto auto auto 16px;
         grid-template-areas: 
         ". f1 f2 f3 ."
@@ -536,9 +539,51 @@ form{
         ". f13 f14 f15 ."
         ". f16 f17 f18 ."
         ". f19 f20 . .";
+
+       justify-items: left;
     }
 }
+
+input[type=checkbox]{
+    margin: 16px 0px 16px 0px;
+    background-color: var(--blueberry);
+    height: 36px;
+  width: 36px;
+border-color: var(--blueberry);
+}
    
+}
+
+.style-box{
+    div{
+        border-radius: 5px;
+        width: 36px;
+        height: 36px;
+    }
+    
+}
+
+
+.fancy{
+    li{
+        input{
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    
+}
+.big-flex{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+
+    h3{
+        font-size: rem-calc(14);
+        color: var(--eggplant);
+        font-weight: 400;
+    }
 }
 
 .f1{

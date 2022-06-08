@@ -8,7 +8,7 @@
     h2{
         text-align: center;
         color: var(--deep-space);
-        font-size: rem-calc(36);
+        font-size: rem-calc(48);
     }
 }
 
@@ -43,6 +43,7 @@
 .pt-month{
     grid-area: pt-month;
     margin: 16px 24px 16px 24px ;
+ 
 
     form{
         display: flex;
@@ -56,6 +57,7 @@
             border-radius: 25px 0px 0px 25px;
             border-color: var(--tulip);
             border-style: solid;
+            color: var(--dark-gray);
         }   
         }
     }
