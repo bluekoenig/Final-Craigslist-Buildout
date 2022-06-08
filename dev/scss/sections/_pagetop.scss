@@ -17,6 +17,10 @@
     grid-area: pt-search;
     margin: 16px 24px 0px 24px ;
 
+    @include xxl{
+        margin-right: 72px;
+    }
+
    
     form{
         display: flex;
@@ -38,6 +42,10 @@
             @include lg{
                 padding-right: 70%;
             }
+
+            @include xxl{
+                padding-right: 75%;
+            }
         }   
 
         }
@@ -52,7 +60,11 @@
     }
 .pt-month{
     grid-area: pt-month;
-    margin: 16px 24px 16px 24px ;
+    margin: 16px 24px 16px 24px;
+
+    @include xxl{
+        margin-right: 72px;
+    }
  
 
     form{
@@ -75,6 +87,10 @@
 
             @include lg{
                 padding-right: 78%;
+            }
+
+            @include xxl{
+                padding-right: 81%;
             }
         }   
         }

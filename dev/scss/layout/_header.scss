@@ -6,7 +6,7 @@ header {
     position: fixed;
     bottom: 100;
     left: 0;
-  
+
 
     // @include md {
     //     position: fixed;
@@ -19,7 +19,7 @@ header {
     padding-top: 8px;
     background-color: var(--dark-gray);
 
-    @include md{
+    @include md {
         position: relative;
     }
 
@@ -37,6 +37,7 @@ header {
 
     section {
         width: 90%;
+
         h1 {
 
             @include md {
@@ -57,21 +58,21 @@ header {
 
 .header-grid {
     width: 100%;
-padding: 24px 0px 24px 0px;
+    padding: 24px 0px 24px 0px;
     display: grid;
     align-content: center;
     gap: 16px;
     grid-template-columns: 16px 20% 60% 16px;
-    grid-template-areas: 
-    ". header search ."
-    ". nav nav .";
-
-        @include md{
-            grid-template-columns: 16px 20% 40% 20% 0px;
     grid-template-areas:
-        ". header search nav .";
-            gap: 36px;
-        }
+        ". header search ."
+        ". nav nav .";
+
+    @include md {
+        grid-template-columns: 16px 20% 40% 20% 0px;
+        grid-template-areas:
+            ". header search nav .";
+        gap: 36px;
+    }
 }
 
 // .headline-grid{
@@ -107,12 +108,13 @@ padding: 24px 0px 24px 0px;
 
 .header {
     grid-area: header;
-   
+
 }
 
 .search {
     grid-area: search;
-    form{
+
+    form {
         display: flex;
         justify-content: flex-end;
         border: none;
@@ -127,59 +129,65 @@ padding: 24px 0px 24px 0px;
     color: var(--poke);
 }
 
-.nav-grid{
+.nav-grid {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 16px 15% 15% 15% 15% 15% 16px;
     gap: 16px;
-    grid-template-areas: 
-    "r1 r2 r3 r4 r5";
+    grid-template-areas:
+        ". r1 r2 r3 r4 r5 .";
     align-items: right;
     justify-items: right;
     padding-right: 42px;
     filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
 
 
-   
-        img{
-                width: 150%;
+
+    img {
+        width: 6vw;
+
+        @include md{
+            width: 3vw;
         }
+
+       @include lg {
+            width: 2vw;
+        }
+
     }
-    
+}
 
 
-.r1{
-    
-        grid-area: r1;
-        width: 16px;
-    }
-  
 
-.r2{
-   
-        grid-area: r2;
-        width: 16px;
-    }
-   
+.r1 {
 
-.r3{
-  
-        grid-area: r3;
-        width: 16px;
-    }
-   
-
-.r4{
-  
-        grid-area: r4;
-        width: 16px;
-    }
-  
-
-.r5{
-   
-        grid-area: r5;
-        width: 16px;
-    }
-   
+    grid-area: r1;
+    width: 16px;
+}
 
 
+.r2 {
+
+    grid-area: r2;
+    width: 16px;
+}
+
+
+.r3 {
+
+    grid-area: r3;
+    width: 16px;
+}
+
+
+.r4 {
+
+    grid-area: r4;
+    width: 16px;
+}
+
+
+.r5 {
+
+    grid-area: r5;
+    width: 16px;
+}

@@ -656,16 +656,26 @@ header section {
 
 .nav-grid {
   display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-columns: 16px 15% 15% 15% 15% 15% 16px;
   gap: 16px;
-  grid-template-areas: "r1 r2 r3 r4 r5";
+  grid-template-areas: ". r1 r2 r3 r4 r5 .";
   align-items: right;
   justify-items: right;
   padding-right: 42px;
   filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
 }
 .nav-grid img {
-  width: 150%;
+  width: 6vw;
+}
+@media (min-width: 768px) {
+  .nav-grid img {
+    width: 3vw;
+  }
+}
+@media (min-width: 1024px) {
+  .nav-grid img {
+    width: 2vw;
+  }
 }
 
 .r1 {
@@ -2659,6 +2669,11 @@ footer ul {
   grid-area: pt-search;
   margin: 16px 24px 0px 24px;
 }
+@media (min-width: 1440px) {
+  .pt-search {
+    margin-right: 72px;
+  }
+}
 .pt-search form {
   display: flex;
   justify-content: flex-end;
@@ -2682,6 +2697,11 @@ footer ul {
     padding-right: 70%;
   }
 }
+@media (min-width: 1440px) {
+  .pt-search form input {
+    padding-right: 75%;
+  }
+}
 
 button {
   background-color: var(--eggplant);
@@ -2694,6 +2714,11 @@ button {
 .pt-month {
   grid-area: pt-month;
   margin: 16px 24px 16px 24px;
+}
+@media (min-width: 1440px) {
+  .pt-month {
+    margin-right: 72px;
+  }
 }
 .pt-month form {
   display: flex;
@@ -2717,6 +2742,11 @@ button {
 @media (min-width: 1024px) {
   .pt-month form input {
     padding-right: 78%;
+  }
+}
+@media (min-width: 1440px) {
+  .pt-month form input {
+    padding-right: 81%;
   }
 }
 
@@ -2855,6 +2885,12 @@ button {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas: "v1 v1 v2 v2" "v3 v4 v5 v5 " "v6 v7 . v8";
+}
+@media (min-width: 1440px) {
+  .sug-grid {
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 10%;
+    grid-template-areas: "v1 v1 . . v2 v2 v2" "v3 v4 v5 v5 . . ." "v6 v7 . . . v8 v8";
+  }
 }
 
 .v1 {
