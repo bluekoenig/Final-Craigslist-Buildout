@@ -2759,7 +2759,7 @@ button {
   margin-bottom: 36px;
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-areas: "v1 v1 v2 v2" "v3 v4 v5 v5 " "v6 v6 . v7";
+  grid-template-areas: "v1 v1 v2 v2" "v3 v4 v5 v5 " "v6 v7 . v8";
 }
 
 .v1 {
@@ -2802,7 +2802,10 @@ button {
 
 .v7 {
   grid-area: v7;
+  height: 4vh;
   margin-bottom: 8px;
+  justify-items: flex-start;
+  align-items: flex-start;
 }
 
 .v8 {

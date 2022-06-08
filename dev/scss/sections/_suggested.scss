@@ -49,7 +49,7 @@ h2{
    grid-template-areas: 
    "v1 v1 v2 v2"
    "v3 v4 v5 v5 "
-   "v6 v6 . v7";
+   "v6 v7 . v8";
 }
 
 .v1{
@@ -87,7 +87,10 @@ h2{
 }
 .v7{
     grid-area: v7;
+    height: 4vh;
     margin-bottom: 8px;
+    justify-items: flex-start;
+    align-items: flex-start;
 }
 .v8{
     grid-area: v8;
