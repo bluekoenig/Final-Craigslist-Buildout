@@ -22,6 +22,10 @@
     margin-top: 36px;
     grid-area: mega-calendar2;
     font-size: rem-calc(18);
+
+    @include lg{
+        font-size: rem-calc(72);
+    }
    
 
     div {
@@ -44,6 +48,7 @@
         border: none;
         margin: 0px;
         margin-left: 24px;
+        
     }
 
 
@@ -60,6 +65,10 @@
             padding: 16px;
         }
 
+        @include lg{
+            font-size: rem-calc(22);
+        }
+
         &:hover {
             background-color: var(--tulip);
             color: var(--white);
@@ -74,13 +83,13 @@
         display: grid;
         grid-template-columns: 12px 14% 14% 14% 14% 14% 14% 14% 12px;
         grid-template-areas:
-            ". l-but .  month month month . r-but ."
-            ". sun mon tue wed thur fri sat ."
-            ". c1 c2 c3 c4 c5 c6 c7 ."
-            ". c8 c9 c10 c11 c12 c13 c14 ."
-            ". c15 c16 c17 c18 c19 c20 c21 ."
-            ". c22 c23 c24 c25 c26 c27 c28 ."
-            ". c29 c30 c31 . . . . .";
+            ". l-but-2 .  month-2 month-2 month-2 . r-but-2 ."
+            ". sun-2 mon-2 tue-2 wed-2 thur-2 fri-2 sat-2 ."
+            ". c1-2 c2-2 c3-2 c4-2 c5-2 c6-2 c7-2 ."
+            ". c8-2 c9-2 c10-2 c11-2 c12-2 c13-2 c14-2 ."
+            ". c15-2 c16-2 c17-2 c18-2 c19-2 c20-2 c21-2 ."
+            ". c22-2 c23-2 c24-2 c25-2 c26-2 c27-2 c28-2 ."
+            ". c29-2 c30-2 c31-2 . . . . .";
 
         @include lg {
             margin: 36px;
@@ -102,9 +111,9 @@
 
 
 
-.l-but {
+.l-but-2 {
 
-    grid-area: l-but;
+    grid-area: l-but-2;
 
 @include xxl{
     margin-right: 72px;
@@ -112,18 +121,18 @@
 
 }
 
-.r-but {
+.r-but-2 {
 
-    grid-area: r-but;
+    grid-area: r-but-2;
     @include xxl{
         margin-right: 72px;
     }
 
 }
 
-.month {
+.month-2 {
 
-    grid-area: month;
+    grid-area: month-2;
     font-size: rem-calc(24);
 
     @include xxl{
@@ -132,359 +141,587 @@
 
 }
 
-.sun {
+.sun-2 {
 
-    grid-area: sun;
+    grid-area: sun-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+       
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+       
+        padding-right: 48px;
     }
 }
 
 
-.mon {
+.mon-2 {
 
-    grid-area: mon;
+    grid-area: mon-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+       
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+        
+        padding-right: 48px;
     }
 }
 
 
-.tue {
+.tue-2 {
 
-    grid-area: tue;
+    grid-area: tue-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+       
+        padding-right: 48px;
     }
 }
 
 
-.wed {
+.wed-2 {
 
-    grid-area: wed;
+    grid-area: wed-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+       
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+       
+        padding-right: 48px;
     }
 }
 
 
-.thur {
+.thur-2 {
 
-    grid-area: thur;
+    grid-area: thur-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+      
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+       
+        padding-right: 48px;
     }
 }
 
 
-.fri {
+.fri-2 {
 
-    grid-area: fri;
+    grid-area: fri-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+      
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+        
+        padding-right: 48px;
     }
 }
 
 
-.sat {
+.sat-2 {
 
-    grid-area: sat;
+    grid-area: sat-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+    
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+       
+        padding-right: 48px;
     }
 }
 
 
-.c1 {
-    grid-area: c1;
+.c1-2 {
+    grid-area: c1-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 48px;
     }
 }
 
-.c2 {
-    grid-area: c2;
+.c2-2 {
+    grid-area: c2-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 48px;
     }
 }
 
-.c3 {
-    grid-area: c3;
+.c3-2 {
+    grid-area: c3-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 48px;
+        padding-bottom: 48px;
+        padding-right: 48px;
     }
 }
 
-.c4 {
-    grid-area: c4;
+.c4-2 {
+    grid-area: c4-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c5 {
-    grid-area: c5;
+.c5-2 {
+    grid-area: c5-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c6 {
-    grid-area: c6;
+.c6-2 {
+    grid-area: c6-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c7 {
-    grid-area: c7;
+.c7-2 {
+    grid-area: c7-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c8 {
-    grid-area: c8;
-
+.c8-2 {
+    grid-area: c8-2;
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c9 {
-    grid-area: c9;
+.c9-2 {
+    grid-area: c9-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c10 {
-    grid-area: c10;
+.c10-2 {
+    grid-area: c10-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c11 {
-    grid-area: c11;
+.c11-2 {
+    grid-area: c11-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c12 {
-    grid-area: c12;
+.c12-2 {
+    grid-area: c12-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c13 {
-    grid-area: c13;
+.c13-2 {
+    grid-area: c13-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c14 {
-    grid-area: c14;
+.c14-2 {
+    grid-area: c14-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c15 {
-    grid-area: c15;
+.c15-2 {
+    grid-area: c15-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c16 {
-    grid-area: c16;
+.c16-2 {
+    grid-area: c16-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c17 {
-    grid-area: c17;
+.c17-2 {
+    grid-area: c17-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c18 {
-    grid-area: c18;
+.c18-2 {
+    grid-area: c18-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c19 {
-    grid-area: c19;
+.c19-2 {
+    grid-area: c19-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c20 {
-    grid-area: c20;
+.c20-2 {
+    grid-area: c20-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c21 {
-    grid-area: c21;
+.c21-2 {
+    grid-area: c21-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c22 {
-    grid-area: c22;
+.c22-2 {
+    grid-area: c22-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c23 {
-    grid-area: c23;
+.c23-2 {
+    grid-area: c23-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c24 {
-    grid-area: c24;
+.c24-2 {
+    grid-area: c24-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+}
+@include xxl{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-right: 36px;
+}
+
+}
+.c25-2 {
+    grid-area: c25-2;
+
+    @include lg {
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c25 {
-    grid-area: c25;
+.c26-2 {
+    grid-area: c26-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c26 {
-    grid-area: c26;
+.c27-2 {
+    grid-area: c27-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c27 {
-    grid-area: c27;
+.c28-2 {
+    grid-area: c28-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c28 {
-    grid-area: c28;
+.c29-2 {
+    grid-area: c29-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c29 {
-    grid-area: c29;
+.c30-2 {
+    grid-area: c30-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 24px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
+    }
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
-.c30 {
-    grid-area: c30;
+.c31-2 {
+    grid-area: c31-2;
 
     @include lg {
-        padding-top: 12px;
-        padding-bottom: 24px;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
-}
 
-.c31 {
-    grid-area: c31;
-
-    @include lg {
-        padding-top: 12px;
-        padding-bottom: 24px;
+    @include xxl{
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-right: 36px;
     }
 }
 
@@ -703,6 +940,7 @@ border-color: var(--blueberry);
 }
 
 .crazy-cal1{
+    
     @include lg{
         margin: 16px 16px 16px 16px;
         display: grid;
@@ -710,7 +948,6 @@ border-color: var(--blueberry);
         grid-template-areas: 
         ". filt move-cal ."
         ". filt move-cal .";
-
         .filt{
             grid-area: filt;
         }
@@ -718,6 +955,24 @@ border-color: var(--blueberry);
         .move-cal{
             grid-area: move-cal;
         }
+       
+    }
+
+    @include xxl{
+        margin: 16px 16px 16px 16px;
+        display: grid;
+        grid-template-columns: 16px 20% 16px 70% 16px;
+        grid-template-areas: 
+        ". filt . move-cal ."
+        ". filt . move-cal .";
+        .filt{
+            grid-area: filt;
+        }
+
+        .move-cal{
+            grid-area: move-cal;
+        }
+       
     }
    
 }
