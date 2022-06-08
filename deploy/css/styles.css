@@ -846,9 +846,14 @@ footer ul {
   background-color: var(--white);
   color: var(--dark-gray);
   border: none;
-  padding: 16px;
+  padding: 8px;
   cursor: pointer;
   transition: 0.25s;
+}
+@media (min-width: 768px) {
+  .mega-calendar2 button {
+    padding: 16px;
+  }
 }
 .mega-calendar2 button:hover {
   background-color: var(--tulip);
@@ -2898,7 +2903,14 @@ button {
   border: none;
   color: var(--white);
   border-radius: 40px;
-  font-size: 1.125rem;
+  font-size: 0.875rem;
+  padding: 16px 16px 16px 16px;
+  width: fit-content;
+}
+@media (min-width: 768px) {
+  .bootie {
+    font-size: 1.125rem;
+  }
 }
 
 .sug-grid {

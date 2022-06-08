@@ -41,7 +41,13 @@ h2{
             border: none;
             color: var(--white);
             border-radius: 40px;
-            font-size: rem-calc(18);
+            font-size: rem-calc(14);
+            padding: 16px 16px 16px 16px;
+            width: fit-content;
+
+            @include md{
+                font-size: rem-calc(18);
+            }
        
     }
 
