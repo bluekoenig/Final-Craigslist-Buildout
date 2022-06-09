@@ -778,6 +778,7 @@ color: var(--poke);
 
 @include xxl{
     margin-left: 30%;
+    font-size: rem-cal(36);
 }
 
 }
@@ -837,10 +838,10 @@ form{
       
        @include xxl{
         display: grid;
-        grid-template-columns: 16px auto 36px auto 16px;
+        grid-template-columns: 16px auto 40% auto 16px;
         grid-template-areas: 
-        ". f1 . f2 ."
-        ". f3 . f4 ."
+        ". f1 f1 f2 ."
+        ". f3 . f4 f4"
         ". f5 . f6 ."
         ". f7 . f8 ."
         ". f9 . f10 ."
@@ -851,6 +852,7 @@ form{
         ". f19 . f20 .";
         
 margin-left: 30%;
+width: fit-content;
        justify-items: left;
        }
     }
@@ -869,8 +871,8 @@ border-color: var(--blueberry);
 }
 
 @include xxl{
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
 }
 }
    
@@ -905,11 +907,17 @@ border-color: var(--blueberry);
         font-size: rem-calc(14);
         color: var(--eggplant);
         font-weight: 400;
+
+        @include lg{
+            width: fit-content;
+            font-size: rem-calc(18);
+        }
     }
 }
 
 .f1{
     grid-area: f1;
+    width: fit-content;
 }
 .f2{
     grid-area: f2;
@@ -919,6 +927,7 @@ border-color: var(--blueberry);
 }
 .f4{
     grid-area: f4;
+    width: fit-content;
 }
 .f5{
     grid-area: f5;

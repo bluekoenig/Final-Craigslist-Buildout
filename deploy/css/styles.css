@@ -1647,6 +1647,7 @@ footer ul {
 @media (min-width: 1440px) {
   #filters h4 {
     margin-left: 30%;
+    font-size: rem-cal(36);
   }
 }
 
@@ -1672,9 +1673,10 @@ form ul {
 @media (min-width: 1440px) {
   form ul {
     display: grid;
-    grid-template-columns: 16px auto 36px auto 16px;
-    grid-template-areas: ". f1 . f2 ." ". f3 . f4 ." ". f5 . f6 ." ". f7 . f8 ." ". f9 . f10 ." ". f11 . f12 ." ". f13 . f14 ." ". f15 . f16 ." ". f17 . f18 ." ". f19 . f20 .";
+    grid-template-columns: 16px auto 40% auto 16px;
+    grid-template-areas: ". f1 f1 f2 ." ". f3 . f4 f4" ". f5 . f6 ." ". f7 . f8 ." ". f9 . f10 ." ". f11 . f12 ." ". f13 . f14 ." ". f15 . f16 ." ". f17 . f18 ." ". f19 . f20 .";
     margin-left: 30%;
+    width: fit-content;
     justify-items: left;
   }
 }
@@ -1694,8 +1696,8 @@ input[type=checkbox] {
 }
 @media (min-width: 1440px) {
   input[type=checkbox] {
-    height: 24px;
-    width: 24px;
+    height: 28px;
+    width: 28px;
   }
 }
 
@@ -1721,9 +1723,16 @@ input[type=checkbox] {
   color: var(--eggplant);
   font-weight: 400;
 }
+@media (min-width: 1024px) {
+  .big-flex > h3 {
+    width: fit-content;
+    font-size: 1.125rem;
+  }
+}
 
 .f1 {
   grid-area: f1;
+  width: fit-content;
 }
 
 .f2 {
@@ -1736,6 +1745,7 @@ input[type=checkbox] {
 
 .f4 {
   grid-area: f4;
+  width: fit-content;
 }
 
 .f5 {
