@@ -666,7 +666,7 @@ header section {
   align-items: center;
   justify-items: center;
   margin: 0px 10% 0px 10%;
-  grid-template-areas: ". r1 r2 r3 r4 r5 .";
+  grid-template-areas: ". r1 r2 r3 r4 r5 ." ". g1 g2 g3 g4 g5 .";
   filter: invert(43%) sepia(69%) saturate(610%) hue-rotate(213deg) brightness(85%) contrast(84%);
 }
 @media (min-width: 768px) {
@@ -686,6 +686,11 @@ header section {
   }
 }
 @media (min-width: 1024px) {
+  .nav-grid img {
+    width: 3vw;
+  }
+}
+@media (min-width: 1440px) {
   .nav-grid img {
     width: 2vw;
   }
