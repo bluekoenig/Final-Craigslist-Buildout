@@ -838,7 +838,7 @@ form{
       
        @include xxl{
         display: grid;
-        grid-template-columns: 16px auto 40% auto 16px;
+        grid-template-columns: 0px auto 20% auto 16px;
         grid-template-areas: 
         ". f1 f1 f2 ."
         ". f3 . f4 f4"
@@ -888,15 +888,15 @@ border-color: var(--blueberry);
 }
 
 
-.fancy{
-    li{
-        input{
-            align-items: center;
-            justify-content: center;
-        }
-    }
+// .fancy{
+//     li{
+//         input{
+//             align-items: center;
+//             justify-content: center;
+//         }
+//     }
     
-}
+
 .big-flex{
     display: flex;
     gap: 8px;

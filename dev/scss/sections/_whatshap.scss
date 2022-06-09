@@ -243,6 +243,10 @@
             @include lg{
                 padding-right: 70%;
             }
+
+            @include xxl{
+                padding-right: 75%;
+            }
         }   
         }
     }
